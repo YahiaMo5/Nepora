@@ -164,21 +164,21 @@
             // prefer specific image files; fallback to a placeholder
             const imgFiles = {
                 // Giza
-                pyramids: 'pyramids.png',
-                saqqara: 'saqqara.png',
-                'grand-museum': 'grand-museum.png',
-                memphis: 'memphis-museum.png',
-                'queens-pyramids': 'queens-pyramids.png',
-                'bent-pyramid': 'bent-pyramid.png',
+                pyramids: 'images/pyramids.png',
+                saqqara: 'images/saqqara.png',
+                'grand-museum': 'images/grand-museum.png',
+                memphis: 'images/memphis-museum.png',
+                'queens-pyramids': 'images/queens-pyramids.png',
+                'bent-pyramid': 'images/bent-pyramid.png',
                 
                 // Luxor
-                karnak: 'karnak.png',
-                valley: 'valley-of-kings.png',
-                'luxor-temple': 'luxor-temple.png',
-                hatshepsut: 'hatshepsut-temple.png',
-                'medinet-habu': 'medinet-habu.png',
-                ramesseum: 'ramesseum.png',
-                'nobles-tombs': 'nobles-tombs.png',
+                karnak: 'images/karnak.png',
+                valley: 'images/valley-of-kings.png',
+                'luxor-temple': 'images/luxor-temple.png',
+                hatshepsut: 'images/hatshepsut-temple.png',
+                'medinet-habu': 'images/medinet-habu.png',
+                ramesseum: 'images/ramesseum.png',
+                'nobles-tombs': 'images/nobles-tombs.png',
                 
                 // Aswan
                 abu: 'abu-simbel.png',
@@ -621,3 +621,4 @@
     });
 
 })();
+
