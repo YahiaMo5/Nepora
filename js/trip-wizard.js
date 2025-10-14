@@ -164,21 +164,21 @@
             // prefer specific image files; fallback to a placeholder
             const imgFiles = {
                 // Giza
-                pyramids: 'images/pyramids.png',
-                saqqara: 'images/saqqara.png',
-                'grand-museum': 'images/grand-museum.png',
-                memphis: 'images/memphis-museum.png',
-                'queens-pyramids': 'images/queens-pyramids.png',
-                'bent-pyramid': 'images/bent-pyramid.png',
+                pyramids: 'pyramids.png',
+                saqqara: 'saqqara.png',
+                'grand-museum': 'grand-museum.png',
+                memphis: 'memphis-museum.png',
+                'queens-pyramids': 'queens-pyramids.png',
+                'bent-pyramid': 'bent-pyramid.png',
                 
                 // Luxor
-                karnak: 'images/karnak.png',
-                valley: 'images/valley-of-kings.png',
-                'luxor-temple': 'images/luxor-temple.png',
-                hatshepsut: 'images/hatshepsut-temple.png',
-                'medinet-habu': 'images/medinet-habu.png',
-                ramesseum: 'images/ramesseum.png',
-                'nobles-tombs': 'images/nobles-tombs.png',
+                karnak: 'karnak.png',
+                valley: 'valley-of-kings.png',
+                'luxor-temple': 'luxor-temple.png',
+                hatshepsut: 'hatshepsut-temple.png',
+                'medinet-habu': 'medinet-habu.png',
+                ramesseum: 'ramesseum.png',
+                'nobles-tombs': 'nobles-tombs.png',
                 
                 // Aswan
                 abu: 'abu-simbel.png',
@@ -199,13 +199,13 @@
                 museum: 'cairo-museum.png',
                 nilometer: 'nilometer.png',
             };
-            const imgPath = `assets/images/${imgFiles[item.id] || 'attraction-placeholder.png'}`;
+            const imgPath = `images/${imgFiles[item.id] || 'attraction-placeholder.png'}`;
             // Add location information based on governorate
             const govName = (window.languageSwitcher && window.languageSwitcher.getNestedTranslation) ? (window.languageSwitcher.getNestedTranslation(`tripWizard.governorates.${gov}`, currentLang) || gov) : ({giza:'الجيزة',luxor:'الأقصر',aswan:'أسوان',alexandria:'الإسكندرية',cairo:'القاهرة'})[gov] || gov;
             
             box.innerHTML = `
                 <input type="checkbox" name="attraction" value="${item.id}" data-price="${item.price}" class="d-none">
-                <img src="${imgPath}" alt="${name}" class="card-media" onerror="this.src='assets/images/attraction-placeholder.png'">
+                <img src="${imgPath}" alt="${name}" class="card-media" onerror="this.src='images/attraction-placeholder.png'">
                 <div class="attraction-details">
                     <div class="attraction-title">${name}</div>
                     <div class="attraction-location">
@@ -267,7 +267,7 @@
             item.dataset.hotelId=h.id; 
             item.dataset.price=h.price;
             const name = (h.name && typeof h.name === 'object') ? (h.name[currentLang] || h.name.ar) : (h.name || '');
-            const imgSrc = h.img ? `assets/images/${h.img}` : 'assets/images/hotel-placeholder.png';
+            const imgSrc = h.img ? `images/${h.img}` : 'images/hotel-placeholder.png';
             // amenities icons mapping
             const amenityIcons = {
                 wifi: 'fa-wifi',
