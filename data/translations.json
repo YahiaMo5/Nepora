@@ -1,0 +1,915 @@
+{
+  "ar": {
+    "testimonials": {
+      "title": "آراء عملائنا",
+      "subtitle": "تجارب حقيقية من ضيوفنا الكرام",
+      "review1": "تجربة رائعة فاقت كل التوقعات. المرشدون السياحيون المحترفون والتنظيم الممتاز جعلا رحلتنا لا تُنسى. أنصح بشدة بشركة نيبورا لكل من يخطط لزيارة مصر",
+      "author1": "أحمد محمد",
+      "country1": "المملكة العربية السعودية",
+      "review2": "خدمة استثنائية من البداية إلى النهاية. المرشد السياحي كان على دراية واسعة، والفنادق كانت ممتازة. سنستخدم نيبورا بالتأكيد مرة أخرى في مغامرتنا المصرية القادمة",
+      "author2": "سارة جونسون",
+      "country2": "المملكة المتحدة",
+      "review3": "تنظيم مثالي واهتمام بأدق التفاصيل. الجولات الافتراضية بتقنية 360 درجة ساعدتنا في التخطيط لرحلتنا بشكل أفضل. شكراً نيبورا على تحقيق حلمنا المصري",
+      "author3": "محمد العلي",
+      "country3": "الإمارات العربية المتحدة",
+      "review4": "تجربة ثرية بالمعلومات والمتعة. المرشدين السياحيين لديهم معرفة عميقة بالتاريخ المصري",
+      "author4": "نورة الحربي",
+      "country4": "قطر"
+    },
+    "page": {
+      "title": "Nepora - رحلتك عبر الزمن إلى حضارة الفراعنة | أفضل الجولات السياحية في مصر",
+      "description": "Nepora - رحلتك عبر الزمن إلى حضارة الفراعنة. اكتشف أفضل الوجهات السياحية المصرية مع باقات سياحية مميزة وجولات 360 درجة. احجز الآن واستمتع بتجربة فرعونية لا تُنسى",
+      "keywords": "سياحة مصر, الأهرامات, معابد فرعونية, جولات سياحية, حجز رحلات مصر, Nepora, معبد الكرنك, أبو سمبل, وادي الملوك, السياحة في مصر, رحلات القاهرة, رحلات الأقصر, رحلات أسوان, جولات 360 درجة, باقات سياحية مصر"
+    },
+    "faq": {
+      "pageTitle": "الأسئلة الشائعة - Nepora Tourism | إجابات على جميع استفساراتك",
+      "description": "الأسئلة الشائعة - Nepora Tourism. إجابات على جميع أسئلتك حول الحجز، الدفع، الإلغاء، المرشدين السياحيين، التأمين الصحي، وأفضل أوقات الزيارة لمصر",
+      "keywords": "أسئلة شائعة، حجز رحلات، سياحة مصر، Nepora، طرق الدفع، سياسة الإلغاء، مرشدين سياحيين، تأمين صحي، أفضل وقت لزيارة مصر",
+      "title": "الأسئلة الشائعة",
+      "subtitle": "إجابات على جميع أسئلتك حول خدماتنا السياحية",
+      "stillHaveQuestions": "لا تزال لديك أسئلة؟",
+      "contactUs": "فريقنا متاح للإجابة على جميع استفساراتك",
+      "contactButton": "تواصل معنا",
+      "q1": "كيف يمكنني حجز رحلة مع Nepora؟",
+      "a1": "يمكنك حجز رحلتك بعدة طرق سهلة: من خلال موقعنا الإلكتروني عبر نموذج الحجز، أو الاتصال بنا مباشرة على أرقام الهاتف المتاحة، أو زيارة مكتبنا في القاهرة. فريقنا متاح للرد على استفساراتك ومساعدتك في اختيار الباقة المناسبة لك.",
+      "q2": "ما هي طرق الدفع المتاحة؟",
+      "a2": "نقبل جميع طرق الدفع الرئيسية لراحتك: الدفع نقداً في مكتبنا، بطاقات الائتمان (Visa, MasterCard, American Express)، التحويل البنكي المباشر، والدفع الإلكتروني عبر المحافظ الرقمية. يمكنك أيضاً الدفع على أقساط للباقات الكبيرة.",
+      "q3": "ما هي سياسة الإلغاء والاسترجاع؟",
+      "a3": "نوفر سياسة إلغاء مرنة: إلغاء مجاني كامل قبل 14 يوم من موعد الرحلة، استرجاع 50% من المبلغ عند الإلغاء قبل 7 أيام، واسترجاع 25% عند الإلغاء قبل 3 أيام. لا يمكن استرجاع المبلغ في حالة الإلغاء خلال 48 ساعة من موعد الرحلة. يمكنك أيضاً تأجيل الرحلة مرة واحدة بدون رسوم إضافية.",
+      "q4": "ما الذي تشمله الباقات السياحية؟",
+      "a4": "جميع باقاتنا تشمل: الإقامة في فنادق مصنفة حسب الباقة المختارة، المواصلات المكيفة طوال الرحلة، مرشد سياحي محترف يتحدث العربية والإنجليزية، تذاكر دخول جميع المعالم السياحية المذكورة في البرنامج، الوجبات حسب الباقة، والتأمين الصحي الأساسي. لا تشمل الباقات: تذاكر الطيران، المشروبات الكحولية، والنفقات الشخصية.",
+      "q5": "هل المرشدون السياحيون يتحدثون لغات مختلفة؟",
+      "a5": "نعم، لدينا فريق متنوع من المرشدين السياحيين المحترفين والمعتمدين من وزارة السياحة المصرية. جميع مرشدينا يتحدثون العربية والإنجليزية بطلاقة، كما نوفر مرشدين يتحدثون الفرنسية، الألمانية، الإسبانية، الإيطالية، والصينية. يرجى إخبارنا باللغة المفضلة عند الحجز لنوفر لك المرشد المناسب.",
+      "q6": "هل التأمين الصحي مشمول في الباقات؟",
+      "a6": "نعم، جميع باقاتنا تشمل تأميناً صحياً أساسياً يغطي الحوادث والطوارئ الطبية خلال الرحلة. التأمين يشمل: العلاج الطبي الطارئ، الإسعافات الأولية، والنقل إلى المستشفى عند الحاجة. للباقة الملكية، نوفر تأميناً صحياً شاملاً يغطي أيضاً الأمراض المزمنة والأدوية. يمكنك أيضاً شراء تأمين سفر إضافي شامل مقابل رسوم إضافية.",
+      "q7": "ما هي أفضل أوقات الزيارة لمصر؟",
+      "a7": "أفضل وقت لزيارة مصر هو من أكتوبر إلى أبريل، حيث يكون الطقس معتدلاً ومثالياً للجولات السياحية. درجات الحرارة تتراوح بين 15-25 درجة مئوية. الفترة من نوفمبر إلى فبراير هي الأكثر شعبية وقد تكون الأسعار أعلى قليلاً. إذا كنت تفضل الأسعار المنخفضة وتتحمل الحرارة، يمكنك الزيارة في الصيف (مايو-سبتمبر) مع الاستعداد لدرجات حرارة عالية قد تصل إلى 40 درجة.",
+      "q8": "هل توجد خصومات للمجموعات الكبيرة؟",
+      "a8": "نعم، نقدم خصومات مميزة للمجموعات: خصم 10% للمجموعات من 6-10 أشخاص، خصم 15% للمجموعات من 11-20 شخص، وخصم 20% للمجموعات الأكبر من 20 شخص. كما نوفر عروضاً خاصة للعائلات والمدارس والشركات. للحصول على عرض سعر مخصص لمجموعتك، يرجى التواصل معنا مباشرة.",
+      "q9": "ما هي إجراءات السلامة المتبعة؟",
+      "a9": "سلامتك هي أولويتنا القصوى. نتبع أعلى معايير السلامة: جميع مركباتنا مؤمنة ومجهزة بأحزمة أمان وطفايات حريق، نوفر مرافقة أمنية للمجموعات الكبيرة، نلتزم بجميع البروتوكولات الصحية، ونوفر أطقم إسعافات أولية في جميع الرحلات. كما نتابع الأوضاع الأمنية باستمرار ونعدل المسارات عند الحاجة لضمان تجربة آمنة تماماً.",
+      "q10": "هل يمكنني تخصيص رحلتي الخاصة؟",
+      "a10": "بالتأكيد! نحن متخصصون في تصميم رحلات مخصصة تناسب احتياجاتك وميزانيتك. يمكنك اختيار الوجهات، مدة الإقامة، نوع الفندق، والأنشطة التي تفضلها. استخدم نموذج تخطيط الرحلة على موقعنا أو تواصل معنا مباشرة لنساعدك في تصميم رحلة أحلامك."
+    },
+    "contact": {
+      "pageTitle": "تواصل معنا - Nepora Tourism | اتصل بنا الآن",
+      "description": "تواصل معنا - Nepora Tourism. نحن هنا للإجابة على جميع استفساراتك وحجز رحلتك القادمة. اتصل بنا على +20 123 456 7890 أو راسلنا على info@nepora.com",
+      "keywords": "تواصل، اتصل بنا، حجز رحلات، سياحة مصر، Nepora، رقم هاتف، بريد إلكتروني، عنوان المكتب، خدمة العملاء",
+      "title": "تواصل معنا",
+      "subtitle": "نحن هنا للإجابة على جميع استفساراتك ومساعدتك في حجز رحلتك القادمة",
+      "formTitle": "أرسل لنا رسالة",
+      "formSubtitle": "املأ النموذج وسنتواصل معك في أقرب وقت",
+      "nameLabel": "الاسم الكامل",
+      "namePlaceholder": "أدخل اسمك الكامل",
+      "nameError": "يرجى إدخال اسمك الكامل",
+      "emailLabel": "البريد الإلكتروني",
+      "emailPlaceholder": "example@email.com",
+      "emailError": "يرجى إدخال بريد إلكتروني صحيح",
+      "phoneLabel": "رقم الهاتف",
+      "phonePlaceholder": "+20 XXX XXX XXXX",
+      "phoneError": "يرجى إدخال رقم هاتف صحيح",
+      "messageLabel": "رسالتك",
+      "messagePlaceholder": "اكتب رسالتك هنا...",
+      "messageError": "يرجى كتابة رسالتك",
+      "submitButton": "إرسال الرسالة",
+      "successMessage": "تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.",
+      "errorMessage": "حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.",
+      "infoTitle": "معلومات التواصل",
+      "infoSubtitle": "يمكنك التواصل معنا عبر أي من الطرق التالية",
+      "phoneTitle": "الهاتف",
+      "emailTitle": "البريد الإلكتروني",
+      "addressTitle": "العنوان",
+      "address": "شارع الهرم، الجيزة، مصر",
+      "addressDetails": "بجوار المتحف المصري الكبير",
+      "hoursTitle": "ساعات العمل",
+      "weekdays": "السبت - الخميس: 9:00 ص - 6:00 م",
+      "friday": "الجمعة: 10:00 ص - 4:00 م",
+      "mapTitle": "موقعنا على الخريطة"
+    },
+    "nav": {
+      "home": "الرئيسية",
+      "destinations": "الوجهات السياحية",
+      "tour360": "جولة 360",
+      "packages": "الباقات السياحية",
+      "about": "عن الشركة",
+      "faq": "الأسئلة الشائعة",
+      "contact": "تواصل معنا"
+    },
+    "hero": {
+      "title": "Nepora",
+      "subtitle": "رحلتك عبر الزمن إلى حضارة الفراعنة",
+      "cta1": "احجز الآن",
+      "cta2": "استكشف الوجهات"
+    },
+    "destinations": {
+      "title": "الوجهات السياحية الشهيرة",
+      "subtitle": "اكتشف أروع المعالم الأثرية والوجهات السياحية في مصر",
+      "discoverMore": "اكتشف المزيد",
+      "pyramids": {
+        "title": "الأهرامات وأبو الهول",
+        "description": "أعجوبة العالم القديم الوحيدة الباقية، رمز الحضارة المصرية العريقة",
+        "location": "الجيزة"
+      },
+      "karnak": {
+        "title": "معبد الكرنك",
+        "description": "أكبر مجمع معابد في العالم، تحفة معمارية تعكس عظمة الفراعنة",
+        "location": "الأقصر"
+      },
+      "abuSimbel": {
+        "title": "معبد أبو سمبل",
+        "description": "معبد رمسيس الثاني الشهير المنحوت في الصخر، معجزة هندسية فرعونية",
+        "location": "أسوان"
+      },
+      "valleyOfKings": {
+        "title": "وادي الملوك",
+        "description": "مقابر الفراعنة العظماء، حيث اكتشفت مقبرة توت عنخ آمون الشهيرة",
+        "location": "الأقصر"
+      },
+      "philae": {
+        "title": "معبد فيلة",
+        "description": "جوهرة النيل، معبد الإلهة إيزيس على جزيرة ساحرة وسط مياه النيل",
+        "location": "أسوان"
+      },
+      "grandMuseum": {
+        "title": "المتحف المصري الكبير",
+        "description": "أكبر متحف أثري في العالم، يضم كنوز الحضارة المصرية عبر العصور",
+        "location": "الجيزة"
+      },
+      "luxorTemple": {
+        "title": "معبد الأقصر",
+        "description": "معبد فرعوني رائع في قلب مدينة الأقصر، يضيء ليلاً بإضاءة ساحرة",
+        "location": "الأقصر"
+      },
+      "hatshepsut": {
+        "title": "معبد حتشبسوت",
+        "description": "معبد الدير البحري، تحفة معمارية فريدة منحوتة في الجبل",
+        "location": "الأقصر"
+      },
+      "komOmbo": {
+        "title": "معبد كوم أمبو",
+        "description": "معبد فريد مزدوج مخصص لإلهين، يطل على نهر النيل الخالد",
+        "location": "أسوان"
+      },
+      "edfu": {
+        "title": "معبد إدفو",
+        "description": "أفضل المعابد المحفوظة في مصر، معبد الإله حورس الشهير",
+        "location": "اسوان"
+      },
+      "saqqara": {
+        "title": "هرم سقارة المدرج",
+        "description": "أقدم بناء حجري ضخم في العالم، هرم الملك زوسر المدرج",
+        "location": "الجيزة"
+      },
+      "alexandriaLibrary": {
+        "title": "مكتبة الإسكندرية",
+        "description": "واحدة من أبرز المعالم الثقافية في مصر، تضم مجموعات ومؤتمرات دولية",
+        "location": "الإسكندرية"
+      },
+      "egyptianMuseum": {
+        "title": "المتحف المصري",
+        "description": "أقدم متحف أثري في مصر، يضم أكبر مجموعة من الآثار الفرعونية في العالم",
+        "location": "القاهرة"
+      }
+    },
+    "tripWizard": {
+      "title": "خطط رحلتك",
+      "subtitle": "اختَر محافظتك، المعالم، التواريخ، والفندق في 4 خطوات سهلة",
+      "next": "التالي",
+      "prev": "السابق",
+      "governorates": {
+        "giza": "الجيزة",
+        "luxor": "الأقصر",
+        "aswan": "أسوان",
+        "alexandria": "الإسكندرية",
+        "cairo": "القاهرة"
+      },
+      "hotelClasses": {
+        "3": "فندق 3 نجوم",
+        "4": "فندق 4 نجوم",
+        "5": "فندق 5 نجوم"
+      },
+      "successTitle": "تم الحجز بنجاح",
+      "successSubtitle": "شكرًا لك! سيتم التواصل معك للتأكيد",
+      "step1": {
+        "title": "الخطوة 1: اختر المحافظة والمعالم",
+        "governorateLabel": "المحافظة",
+        "selectGovernorate": "اختر المحافظة",
+        "attractionsLabel": "المعالم المتاحة",
+        "recommendedTime": "3-4 ساعات"
+      },
+        "step2": {
+        "title": "الخطوة 2: التاريخ، العدد، وتصنيف الفندق",
+        "startDate": "تاريخ البدء",
+        "endDate": "تاريخ النهاية",
+        "people": "عدد الأشخاص",
+        "hotelClass": "تصنيف الفندق",
+        "selectClass": "اختر تصنيف الفندق",
+        "suggestions": "اقتراحات الفنادق",
+        "roomTypes": "نوع غرفة",
+        "roomsLabel": "عدد الغرف",
+        "selectRoomType": "اختر نوع الغرفة",
+        "selectHotel": "يرجى اختيار فندق"
+      },
+      "step3": {
+        "title": "الخطوة 3: معلومات التواصل",
+        "fullName": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "phone": "رقم الهاتف"
+      },
+      "step4": {
+        "title": "الخطوة 4: ملخص الحجز",
+        "finish": "إنهاء الحجز"
+      },
+      "summary": {
+        "governorate": "المحافظة",
+        "attractions": "المعالم",
+        "hotel": "الفندق",
+        "dates": "التواريخ",
+        "people": "الافراد",
+        "total": "السعر الاجمالي",
+        "noAttractions": "لم يتم اختيار معالم",
+        "noHotel": "لم يتم اختيار فندق",
+        "nights": "ليالي"
+      }
+    },
+    "tour360": {
+      "title": "جولة 360 درجة",
+      "subtitle": "استكشف المعالم الأثرية من منزلك",
+      "description": "اختبر تجربة فريدة من نوعها مع جولاتنا الافتراضية بتقنية 360 درجة. تجول في المعابد والمقابر الفرعونية واستكشف كل تفصيلة كأنك هناك.",
+      "selectTour": "اختر جولة",
+      "fullscreen": "ملء الشاشة",
+      "loading": "جاري التحميل...",
+      "loadingTour": "جاري تحميل الجولة...",
+      "fullscreenLabel": "وضع ملء الشاشة",
+      "fullscreenTitle": "ملء الشاشة",
+      "currentTour": "جولة الأهرامات",
+      "currentDescription": "استكشف أهرامات الجيزة وأبو الهول بتقنية 360 درجة",
+      "tours": {
+        "pyramids": {
+          "title": "الأهرامات وأبو الهول",
+          "description": "استكشف أهرامات الجيزة وأبو الهول بتقنية 360 درجة",
+          "location": "الجيزة"
+        },
+        "karnak": {
+          "title": "معبد الكرنك",
+          "description": "جولة افتراضية داخل أكبر مجمع معابد في العالم",
+          "location": "الأقصر"
+        },
+        "abuSimbel": {
+          "title": "معبد أبو سمبل",
+          "description": "اكتشف معبد رمسيس الثاني المنحوت في الصخر",
+          "location": "أسوان"
+        },
+        "valleyOfKings": {
+          "title": "وادي الملوك",
+          "description": "استكشف مقابر الفراعنة العظماء",
+          "location": "الأقصر"
+        },
+        "philae": {
+          "title": "معبد فيلة",
+          "description": "جولة في معبد الإلهة إيزيس على جزيرة فيلة",
+          "location": "أسوان"
+        },
+        "egyptianMuseum": {
+          "title": "المتحف المصري",
+          "description": "تجول في أقدم وأكبر متحف للآثار المصرية في العالم",
+          "location": "القاهرة"
+        },
+        "dahshur": {
+          "title": "أهرامات دهشور",
+          "description": "اكتشف الأهرامات الفريدة التي تمثل تطور فن بناء الأهرامات",
+          "location": "الجيزة"
+        },
+        "memphis": {
+          "title": "متحف ممفيس المفتوح",
+          "description": "استكشف العاصمة القديمة لمصر الفرعونية وآثارها العظيمة",
+          "location": "الجيزة"
+        },
+        "medinetHabu": {
+          "title": "معبد مدينة هابو",
+          "description": "اكتشف معبد رمسيس الثالث الضخم ونقوشه التاريخية",
+          "location": "الأقصر"
+        },
+        "kalabsha": {
+          "title": "معبد كلابشة",
+          "description": "تجول في أكبر معبد نوبي مستقل في جنوب مصر",
+          "location": "أسوان"
+        },
+        "unfinishedObelisk": {
+          "title": "المسلة الناقصة",
+          "description": "شاهد أكبر مسلة فرعونية واكتشف تقنيات النحت القديمة",
+          "location": "أسوان"
+        },
+        "saqqara": {
+          "title": "هرم سقارة المدرج",
+          "description": "أقدم بناء حجري ضخم في العالم، هرم الملك زوسر المدرج",
+          "location": "الجيزة"
+        },
+        "grandMuseum": {
+          "title": "المتحف المصري الكبير",
+          "description": "استكشف أكبر متحف أثري في العالم",
+          "location": "الجيزة"
+        },
+        "alexandriaLibrary": {
+          "title": "مكتبة الإسكندرية",
+          "description": "جولة افتراضية في صرح ثقافي عالمي حديث",
+          "location": "الإسكندرية"
+        }
+        ,"AlexLe": {
+          "title": "مكتبة الإسكندرية",
+          "description": "جولة افتراضية في صرح معماري حديث ومركز ثقافي عالمي",
+          "location": "الإسكندرية"
+        }
+      }
+    },
+    "packages": {
+      "title": "الباقات السياحية",
+      "subtitle": "اختر الباقة المناسبة لك",
+      "mostPopular": "الأكثر شعبية",
+      "currency": "جنيه",
+      "perPerson": "للفرد",
+      "economy": {
+        "name": "الباقة الاقتصادية",
+        "price": "1500",
+        "duration": "يومان",
+        "feature1": "إقامة في فندق 3 نجوم",
+        "feature2": "مرشد سياحي محترف",
+        "feature3": "وجبتان يومياً",
+        "feature4": "المواصلات المكيفة",
+        "feature5": "زيارة 3 معالم سياحية"
+      },
+      "premium": {
+        "name": "الباقة المميزة",
+        "price": "2500",
+        "duration": "3 أيام",
+        "feature1": "إقامة في فندق 4 نجوم",
+        "feature2": "مرشد سياحي خبير",
+        "feature3": "ثلاث وجبات يومياً",
+        "feature4": "المواصلات الفاخرة",
+        "feature5": "زيارة 5 معالم سياحية",
+        "feature6": "جولة بحرية في النيل"
+      },
+      "royal": {
+        "name": "الباقة الملكية",
+        "price": "4500",
+        "duration": "5 أيام",
+        "feature1": "إقامة في فندق 5 نجوم",
+        "feature2": "مرشد سياحي VIP",
+        "feature3": "جميع الوجبات + بوفيه مفتوح",
+        "feature4": "سيارة خاصة مع سائق",
+        "feature5": "زيارة 8 معالم سياحية",
+        "feature6": "رحلة بحرية فاخرة في النيل",
+        "feature7": "جلسة تصوير احترافية"
+      }
+    },
+    "about": {
+      "title": "عن شركتنا",
+      "subtitle": "رواد السياحة الفرعونية في مصر",
+      "heading": "Nepora - بوابتك إلى عالم الفراعنة",
+      "description": "Nepora هي شركة سياحية رائدة متخصصة في تقديم تجارب سياحية فريدة تجمع بين الأصالة والحداثة. منذ تأسيسنا، نسعى لتقديم أفضل الخدمات السياحية التي تعكس عظمة الحضارة المصرية.",
+      "expertise": "بخبرة تمتد لسنوات في مجال السياحة المصرية، نفخر بتقديم خدمات متكاملة تشمل الجولات المنظمة، الرحلات المخصصة، والجولات الافتراضية 360 درجة. نحن هنا لنجعل حلمك بزيارة مصر حقيقة.",
+      "missionVisionTitle": "مهمتنا و رؤيتنا",
+      "missionVision": "نحن في Nepora نؤمن بأن السياحة ليست مجرد زيارة أماكن، بل هي رحلة عبر الزمن لاستكشاف حضارة عريقة. مهمتنا هي تقديم تجربة سياحية استثنائية تجمع بين الأصالة والراحة، حيث نأخذك في رحلة لا تُنسى عبر أروع المعالم الأثرية المصرية. رؤيتنا هي أن نكون الخيار الأول للسياح الراغبين في استكشاف مصر بطريقة مميزة وآمنة، مع فريق من المرشدين المحترفين وشبكة واسعة من الفنادق الشريكة التي تضمن راحتك في كل خطوة.",
+      "mission": "مهمتنا",
+      "missionText": "نسعى لتقديم تجارب سياحية استثنائية تجمع بين الثقافة والتاريخ والراحة، مع الحفاظ على التراث المصري العريق.",
+      "vision": "رؤيتنا",
+      "visionText": "أن نكون الخيار الأول للسياح الباحثين عن تجربة فرعونية أصيلة ومميزة في مصر.",
+      "milestonesTitle": "إنجازاتنا",
+      "milestone1Title": "2010 - التأسيس",
+      "milestone1Desc": "بدأنا رحلتنا بحلم تقديم أفضل تجربة سياحية في مصر",
+      "milestone2Title": "2015 - التوسع",
+      "milestone2Desc": "توسعنا لنشمل جميع المحافظات السياحية في مصر",
+      "milestone3Title": "2020 - الريادة",
+      "milestone3Desc": "أصبحنا من أفضل شركات السياحة في مصر",
+      "stats": {
+        "years": "سنوات الخبرة",
+        "experience": "سنوات الخبرة",
+        "experienceValue": "15",
+        "customers": "عميل سعيد",
+  "customersValue": "50000",
+  "guides": "مرشد سياحي",
+  "guidesValue": "120",
+  "hotels": "فندق شريك",
+  "hotelsValue": "200"
+      }
+    },
+    "footer": {
+      "description": "رحلتك عبر الزمن إلى حضارة الفراعنة. نقدم أفضل تجربة سياحية في مصر مع باقات مميزة وخدمات احترافية.",
+      "quickLinks": "روابط سريعة",
+      "newsletter": "اشترك في نشرتنا",
+      "newsletterText": "احصل على أحدث العروض والأخبار السياحية",
+      "emailPlaceholder": "بريدك الإلكتروني",
+      "subscribe": "اشترك",
+      "copyright": "© 2024 Nepora Tourism. جميع الحقوق محفوظة."
+    },
+    "validation": {
+      "required": "هذا الحقل مطلوب",
+      "invalidEmail": "البريد الإلكتروني غير صحيح",
+      "invalidPhone": "رقم الهاتف غير صحيح",
+      "minLength": "يجب أن يحتوي على {min} أحرف على الأقل",
+      "maxLength": "يجب ألا يتجاوز {max} حرف",
+      "minValue": "القيمة يجب أن تكون {min} على الأقل",
+      "maxValue": "القيمة يجب ألا تتجاوز {max}",
+      "selectDestination": "يرجى اختيار وجهة واحدة على الأقل",
+      "invalidDate": "التاريخ غير صحيح",
+      "endDateBeforeStart": "تاريخ النهاية يجب أن يكون بعد تاريخ البداية",
+      "pastDate": "لا يمكن اختيار تاريخ في الماضي"
+    },
+    "common": {
+      "loading": "جاري التحميل...",
+      "error": "حدث خطأ",
+      "success": "تم بنجاح",
+      "close": "إغلاق",
+      "cancel": "إلغاء",
+      "confirm": "تأكيد",
+      "save": "حفظ",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "search": "بحث",
+      "filter": "تصفية",
+      "sort": "ترتيب",
+      "viewMore": "عرض المزيد",
+      "viewLess": "عرض أقل",
+      "readMore": "اقرأ المزيد",
+      "readLess": "اقرأ أقل",
+      "learnMore": "اعرف المزيد",
+      "getStarted": "ابدأ الآن",
+      "contactUs": "اتصل بنا",
+      "bookNow": "احجز الآن",
+      "currency": "جنيه",
+      "egp": "ج.م",
+      "perPerson": "للفرد",
+      "perNight": "لليلة",
+      "perDay": "لليوم"
+    }
+  },
+  "en": {
+    "tripWizard": {
+      "title": "Plan Your Trip",
+      "subtitle": "Choose governorate, attractions, dates and hotel in 4 easy steps",
+      "next": "Next",
+      "prev": "Previous",
+      "governorates": {
+        "giza": "Giza",
+        "luxor": "Luxor",
+        "aswan": "Aswan",
+        "alexandria": "Alexandria",
+        "cairo": "Cairo"
+      },
+      "hotelClasses": {
+        "3": "3-star hotel",
+        "4": "4-star hotel",
+        "5": "5-star hotel"
+      },
+      "successTitle": "Booking Confirmed",
+      "successSubtitle": "Thank you! We will contact you to confirm",
+      "step1": {
+        "title": "Step 1: Choose governorate and attractions",
+        "governorateLabel": "Governorate",
+        "selectGovernorate": "Select governorate",
+        "attractionsLabel": "Available attractions",
+        "recommendedTime": "3-4 hrs"
+      },
+      "step2": {
+        "title": "Step 2: Dates, people, and hotel class",
+        "startDate": "Start date",
+        "endDate": "End date",
+        "people": "People",
+        "hotelClass": "Hotel class",
+        "selectClass": "Select class",
+        "suggestions": "Hotel suggestions",
+        "roomTypes": "Room type",
+        "roomsLabel": "Number of rooms",
+        "selectHotel": "Please select a hotel",
+        "selectRoomType": "Select room type"
+      },
+      "step3": {
+        "title": "Step 3: Contact information",
+        "fullName": "Full name",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "step4": {
+        "title": "Step 4: Booking summary",
+        "finish": "Finish booking"
+      },
+      "summary": {
+        "governorate": "Governorate",
+        "attractions": "Attractions",
+        "hotel": "Hotel",
+        "dates": "Dates",
+        "people": "People",
+        "total": "Total price",
+        "noAttractions": "No attractions selected",
+        "noHotel": "No hotel selected",
+        "nights": "nights"
+      }
+    },
+    "page": {
+      "title": "Nepora - Your Journey Through Time to Pharaonic Civilization | Best Tours in Egypt",
+      "description": "Discover the best Egyptian tourist destinations with distinctive tour packages and 360° tours. Book now and enjoy an unforgettable pharaonic experience with Nepora Tourism",
+      "keywords": "Egypt tourism, Pyramids, Pharaonic temples, Tourist tours, Egypt trip booking, Nepora, Karnak Temple, Abu Simbel, Valley of Kings, Tourism in Egypt, Cairo trips, Luxor trips, Aswan trips, 360 tours, Egypt tour packages"
+    },
+    "faq": {
+      "pageTitle": "FAQ - Nepora Tourism | Answers to All Your Questions",
+      "description": "Answers to all your questions about booking, payment, cancellation, tour guides, health insurance, and best times to visit Egypt",
+      "keywords": "FAQ, trip booking, Egypt tourism, Nepora, payment methods, cancellation policy, tour guides, health insurance, best time to visit Egypt",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Answers to all your questions about our tourism services",
+      "stillHaveQuestions": "Still have questions?",
+      "contactUs": "Our team is available to answer all your inquiries",
+      "contactButton": "Contact Us",
+      "q1": "How can I book a trip with Nepora?",
+      "a1": "You can book your trip in several easy ways: through our website via the booking form, by calling us directly on the available phone numbers, or by visiting our office in Cairo. Our team is available to answer your inquiries and help you choose the right package for you.",
+      "q2": "What payment methods are available?",
+      "a2": "We accept all major payment methods for your convenience: cash payment at our office, credit cards (Visa, MasterCard, American Express), direct bank transfer, and electronic payment via digital wallets. You can also pay in installments for large packages.",
+      "q3": "What is the cancellation and refund policy?",
+      "a3": "We offer a flexible cancellation policy: full free cancellation 14 days before the trip date, 50% refund when canceling 7 days before, and 25% refund when canceling 3 days before. No refund is possible if canceled within 48 hours of the trip date. You can also postpone the trip once without additional fees.",
+      "q4": "What do the tour packages include?",
+      "a4": "All our packages include: accommodation in hotels classified according to the chosen package, air-conditioned transportation throughout the trip, professional tour guide speaking Arabic and English, entrance tickets to all tourist sites mentioned in the program, meals according to the package, and basic health insurance. Packages do not include: flight tickets, alcoholic beverages, and personal expenses.",
+      "q5": "Do tour guides speak different languages?",
+      "a5": "Yes, we have a diverse team of professional tour guides certified by the Egyptian Ministry of Tourism. All our guides speak Arabic and English fluently, and we also provide guides who speak French, German, Spanish, Italian, and Chinese. Please let us know your preferred language when booking so we can provide you with the appropriate guide.",
+      "q6": "Is health insurance included in the packages?",
+      "a6": "Yes, all our packages include basic health insurance covering accidents and medical emergencies during the trip. Insurance includes: emergency medical treatment, first aid, and hospital transportation when needed. For the Royal package, we provide comprehensive health insurance that also covers chronic diseases and medications. You can also purchase additional comprehensive travel insurance for an extra fee.",
+      "q7": "What are the best times to visit Egypt?",
+      "a7": "The best time to visit Egypt is from October to April, when the weather is moderate and ideal for sightseeing. Temperatures range between 15-25 degrees Celsius. The period from November to February is the most popular and prices may be slightly higher. If you prefer lower prices and can tolerate heat, you can visit in summer (May-September) while preparing for high temperatures that may reach 40 degrees.",
+      "q8": "Are there discounts for large groups?",
+      "a8": "Yes, we offer special discounts for groups: 10% discount for groups of 6-10 people, 15% discount for groups of 11-20 people, and 20% discount for groups larger than 20 people. We also offer special deals for families, schools, and companies. To get a custom quote for your group, please contact us directly.",
+      "q9": "What safety measures are followed?",
+      "a9": "Your safety is our top priority. We follow the highest safety standards: all our vehicles are insured and equipped with seat belts and fire extinguishers, we provide security escort for large groups, we comply with all health protocols, and we provide first aid kits on all trips. We also continuously monitor security situations and adjust routes when necessary to ensure a completely safe experience.",
+      "q10": "Can I customize my own trip?",
+      "a10": "Absolutely! We specialize in designing custom trips that suit your needs and budget. You can choose destinations, duration of stay, hotel type, and activities you prefer. Use the trip planning form on our website or contact us directly to help you design your dream trip."
+    },
+    "contact": {
+      "pageTitle": "Contact Us - Nepora Tourism | Get in Touch Now",
+      "description": "We are here to answer all your inquiries and book your next trip. Contact us at +20 123 456 7890 or email us at info@nepora.com",
+      "keywords": "contact, call us, trip booking, Egypt tourism, Nepora, phone number, email, office address, customer service",
+      "title": "Contact Us",
+      "subtitle": "We're here to answer all your questions and help you book your next trip",
+      "formTitle": "Send Us a Message",
+      "formSubtitle": "Fill out the form and we'll get back to you soon",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "nameError": "Please enter your full name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "example@email.com",
+      "emailError": "Please enter a valid email address",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "+20 XXX XXX XXXX",
+      "phoneError": "Please enter a valid phone number",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Write your message here...",
+      "messageError": "Please write your message",
+      "submitButton": "Send Message",
+      "successMessage": "Your message has been sent successfully! We'll contact you soon.",
+      "errorMessage": "An error occurred while sending the message. Please try again.",
+      "infoTitle": "Contact Information",
+      "infoSubtitle": "You can contact us through any of the following methods",
+      "phoneTitle": "Phone",
+      "emailTitle": "Email",
+      "addressTitle": "Address",
+      "address": "Pyramid Street, Giza, Egypt",
+      "addressDetails": "Next to the Grand Egyptian Museum",
+      "hoursTitle": "Working Hours",
+      "weekdays": "Saturday - Thursday: 9:00 AM - 6:00 PM",
+      "friday": "Friday: 10:00 AM - 4:00 PM",
+      "mapTitle": "Our Location on the Map"
+    },
+    "nav": {
+      "home": "Home",
+      "destinations": "Popular Destinations",
+      "tour360": "360° Tour",
+      "packages": "Tour Packages",
+      "about": "About Us",
+      "faq": "FAQ",
+      "contact": "Contact Us"
+    },
+    "hero": {
+      "title": "Nepora",
+      "subtitle": "Your Journey Through Time to Pharaonic Civilization",
+      "cta1": "Book Now",
+      "cta2": "Explore Destinations"
+    },
+    "destinations": {
+      "title": "Popular Destinations",
+      "subtitle": "Discover the most magnificent archaeological sites and tourist destinations in Egypt",
+      "discoverMore": "Discover More",
+      "pyramids": {
+        "title": "Pyramids & Sphinx",
+        "description": "The only remaining wonder of the ancient world, symbol of Egypt's ancient civilization",
+        "location": "Giza"
+      },
+      "karnak": {
+        "title": "Karnak Temple",
+        "description": "The largest temple complex in the world, an architectural masterpiece reflecting pharaonic grandeur",
+        "location": "Luxor"
+      },
+      "abuSimbel": {
+        "title": "Abu Simbel Temple",
+        "description": "Ramesses II's famous rock-cut temple, a pharaonic engineering marvel",
+        "location": "Aswan"
+      },
+      "valleyOfKings": {
+        "title": "Valley of the Kings",
+        "description": "The tombs of the great pharaohs, where the famous Tutankhamun's tomb was discovered",
+        "location": "Luxor"
+      },
+      "philae": {
+        "title": "Philae Temple",
+        "description": "The jewel of the Nile, temple of goddess Isis on an enchanting island amidst the Nile waters",
+        "location": "Aswan"
+      },
+      "grandMuseum": {
+        "title": "Grand Egyptian Museum",
+        "description": "The largest archaeological museum in the world, housing treasures of Egyptian civilization through the ages",
+        "location": "Giza"
+      },
+      "egyptianMuseum": {
+        "title": "Egyptian Museum",
+        "description": "The oldest archaeological museum in Egypt, housing the world's largest collection of pharaonic antiquities",
+        "location": "Cairo"
+      },
+      "alexandriaLibrary": {
+        "title": "Bibliotheca Alexandrina",
+        "description": "One of Egypt's most prominent cultural landmarks, hosting international collections and conferences",
+        "location": "Alexandria"
+      },
+      "dahshur": {
+        "title": "Dahshur Pyramids",
+        "description": "A collection of unique pyramids representing the evolution of pyramid building in ancient Egypt",
+        "location": "Giza"
+      },
+      "memphis": {
+        "title": "Memphis Open Air Museum",
+        "description": "The ancient capital of Egypt, featuring massive monuments and artifacts in open air",
+        "location": "Giza"
+      },
+      "medinetHabu": {
+        "title": "Medinet Habu Temple",
+        "description": "Ramesses III's massive temple with reliefs recording his military victories",
+        "location": "Luxor"
+      },
+      "kalabsha": {
+        "title": "Kalabsha Temple",
+        "description": "The largest free-standing Nubian temple, relocated to save it from Lake Nasser's waters",
+        "location": "Aswan"
+      },
+      "unfinishedObelisk": {
+        "title": "The Unfinished Obelisk",
+        "description": "The largest known ancient obelisk, revealing ancient carving techniques",
+        "location": "Aswan"
+      },
+      "saqqara": {
+        "title": "Saqqara Step Pyramid",
+        "description": "The oldest massive stone structure in the world, King Djoser's Step Pyramid",
+        "location": "Giza"
+      },
+      "luxorTemple": {
+        "title": "Luxor Temple",
+        "description": "A magnificent pharaonic temple in the heart of Luxor city, beautifully illuminated at night",
+        "location": "Luxor"
+      },
+      "hatshepsut": {
+        "title": "Hatshepsut Temple",
+        "description": "Deir el-Bahari temple, a unique architectural masterpiece carved into the mountain",
+        "location": "Luxor"
+      },
+      "komOmbo": {
+        "title": "Kom Ombo Temple",
+        "description": "A unique double temple dedicated to two gods, overlooking the eternal Nile River",
+        "location": "Aswan"
+      },
+      "edfu": {
+        "title": "Edfu Temple",
+        "description": "The best-preserved temple in Egypt, the famous temple of god Horus",
+        "location": "Aswan"
+      }
+    },
+    "tour360": {
+      "title": "360° Tour",
+      "subtitle": "Explore archaeological sites from your home",
+      "description": "Experience a unique journey with our 360° virtual tours. Walk through pharaonic temples and tombs and explore every detail as if you were there.",
+      "selectTour": "Select Tour",
+      "fullscreen": "Fullscreen",
+      "loading": "Loading...",
+      "loadingTour": "Loading tour...",
+      "fullscreenLabel": "Fullscreen mode",
+      "fullscreenTitle": "Fullscreen",
+      "currentTour": "Pyramids Tour",
+      "currentDescription": "Explore the Pyramids of Giza and the Sphinx in 360°",
+    "tours": {
+        "pyramids": {
+          "title": "The Pyramids and Sphinx",
+          "description": "Experience the grandeur of ancient Egypt's most iconic monuments in 360°",
+          "location": "Giza"
+        },
+        "dahshur": {
+          "title": "Dahshur Pyramids",
+          "description": "Explore the evolution of pyramid building through these unique structures",
+          "location": "Giza"
+        },
+        "memphis": {
+          "title": "Memphis Open Air Museum",
+          "description": "Walk through the ancient capital of Egypt and its colossal monuments",
+          "location": "Giza"
+        },
+        "medinetHabu": {
+          "title": "Medinet Habu Temple",
+          "description": "Marvel at the mighty temple of Ramesses III and its historical reliefs",
+          "location": "Luxor"
+        },
+        "kalabsha": {
+          "title": "Kalabsha Temple",
+          "description": "Discover the largest free-standing Nubian temple in southern Egypt",
+          "location": "Aswan"
+        },
+        "unfinishedObelisk": {
+          "title": "The Unfinished Obelisk",
+          "description": "Witness ancient Egyptian craftsmanship at this massive unfinished monument",
+          "location": "Aswan"
+        },
+        "saqqara": {
+          "title": "Saqqara Step Pyramid",
+          "description": "Visit the world's oldest known stone building complex",
+          "location": "Giza"
+        },
+        "karnak": {
+          "title": "Karnak Temple",
+          "description": "Experience the world's largest temple complex in an immersive 360° tour",
+          "location": "Luxor"
+        },
+        "abuSimbel": {
+          "title": "Abu Simbel Temple",
+          "description": "Take a virtual tour of Ramesses II's magnificent rock-cut temples",
+          "location": "Aswan"
+        },
+        "valleyOfKings": {
+          "title": "Valley of the Kings",
+          "description": "Explore the royal tombs of ancient Egyptian pharaohs in 360°",
+          "location": "Luxor"
+        },
+        "alexandriaLibrary": {
+          "title": "Bibliotheca Alexandrina",
+          "description": "Take a virtual tour through this modern architectural marvel and cultural hub",
+          "location": "Alexandria"
+        },
+        "AlexLe": {
+          "title": "Alexandria Library",
+          "description": "Take a virtual tour through this modern architectural marvel and cultural hub",
+          "location": "Alexandria"
+        },
+        "philae": {
+          "title": "Philae Temple",
+          "description": "Take a virtual journey through the Temple of Isis on its enchanting island",
+          "location": "Aswan"
+        },
+        "egyptianMuseum": {
+          "title": "Egyptian Museum",
+          "description": "Explore the world's largest collection of pharaonic antiquities virtually",
+          "location": "Cairo"
+        },
+        "grandMuseum": {
+          "title": "Grand Egyptian Museum",
+          "description": "Take a virtual tour of the largest archaeological museum in the world",
+          "location": "Giza"
+        }      
+      }
+    },
+    "packages": {
+      "title": "Tour Packages",
+      "subtitle": "Choose the package that suits you",
+      "mostPopular": "Most Popular",
+      "currency": "EGP",
+      "perPerson": "per person",
+      "economy": {
+        "name": "Economy Package",
+        "price": "1500",
+        "duration": "2 Days",
+        "feature1": "3-star hotel accommodation",
+        "feature2": "Professional tour guide",
+        "feature3": "Two meals daily",
+        "feature4": "Air-conditioned transportation",
+        "feature5": "Visit 3 tourist sites"
+      },
+      "premium": {
+        "name": "Premium Package",
+        "price": "2500",
+        "duration": "3 Days",
+        "feature1": "4-star hotel accommodation",
+        "feature2": "Expert tour guide",
+        "feature3": "Three meals daily",
+        "feature4": "Luxury transportation",
+        "feature5": "Visit 5 tourist sites",
+        "feature6": "Nile cruise"
+      },
+      "royal": {
+        "name": "Royal Package",
+        "price": "4500",
+        "duration": "5 Days",
+        "feature1": "5-star hotel accommodation",
+        "feature2": "VIP tour guide",
+        "feature3": "All meals + open buffet",
+        "feature4": "Private car with driver",
+        "feature5": "Visit 8 tourist sites",
+        "feature6": "Luxury Nile cruise",
+        "feature7": "Professional photo session"
+      }
+    },
+    "about": {
+      "title": "About Us",
+      "subtitle": "Pioneers of Pharaonic Tourism in Egypt",
+      "heading": "Nepora - Your Gateway to the World of Pharaohs",
+      "description": "Nepora is a leading tourism company specializing in providing unique tourism experiences that combine authenticity and modernity. Since our establishment, we strive to provide the best tourism services that reflect the greatness of Egyptian civilization.",
+      "expertise": "With years of experience in Egyptian tourism, we pride ourselves on providing comprehensive services including organized tours, custom trips, and 360° virtual tours. We are here to make your dream of visiting Egypt a reality.",
+      "missionVisionTitle": "Our Mission & Vision",
+      "missionVision": "At Nepora, we believe that tourism is not just about visiting places, but a journey through time to explore an ancient civilization. Our mission is to provide an exceptional tourism experience that combines authenticity and comfort, taking you on an unforgettable journey through Egypt's most magnificent archaeological sites. Our vision is to be the first choice for tourists seeking to explore Egypt in a distinctive and safe way, with a team of professional guides and an extensive network of partner hotels that ensure your comfort every step of the way.",
+      "mission": "Our Mission",
+      "missionText": "We strive to provide exceptional tourism experiences that combine culture, history, and comfort, while preserving Egypt's ancient heritage.",
+      "vision": "Our Vision",
+      "visionText": "To be the first choice for tourists seeking an authentic and distinctive pharaonic experience in Egypt.",
+      "milestonesTitle": "Our Achievements",
+      "milestone1Title": "2010 - Foundation",
+      "milestone1Desc": "We started our journey with a dream to provide the best tourism experience in Egypt",
+      "milestone2Title": "2015 - Expansion",
+      "milestone2Desc": "We expanded to cover all tourist governorates in Egypt",
+      "milestone3Title": "2020 - Leadership",
+      "milestone3Desc": "We became one of the best tourism companies in Egypt",
+      "stats": {
+        "years": "Years of Experience",
+        "experience": "Years of Experience",
+        "experienceValue": "15",
+        "customers": "Happy Customers",
+        "customersValue": "50000",
+        "guides": "Tour Guides",
+        "guidesValue": "120",
+        "hotels": "Partner Hotels",
+        "hotelsValue": "200"
+      }
+    },
+    "footer": {
+      "description": "Your journey through time to pharaonic civilization. We provide the best tourism experience in Egypt with distinctive packages and professional services.",
+      "quickLinks": "Quick Links",
+      "newsletter": "Subscribe to Our Newsletter",
+      "newsletterText": "Get the latest offers and tourism news",
+      "emailPlaceholder": "Your email address",
+      "subscribe": "Subscribe",
+      "copyright": "© 2024 Nepora Tourism. All rights reserved."
+    },
+    "validation": {
+      "required": "This field is required",
+      "invalidEmail": "Invalid email address",
+      "invalidPhone": "Invalid phone number",
+      "minLength": "Must be at least {min} characters",
+      "maxLength": "Must not exceed {max} characters",
+      "minValue": "Value must be at least {min}",
+      "maxValue": "Value must not exceed {max}",
+      "selectDestination": "Please select at least one destination",
+      "invalidDate": "Invalid date",
+      "endDateBeforeStart": "End date must be after start date",
+      "pastDate": "Cannot select a date in the past"
+    },
+    "testimonials": {
+      "title": "Customer Reviews",
+      "subtitle": "Real experiences from our valued guests",
+      "review1": "An amazing experience that exceeded all expectations. The professional guides and excellent organization made our trip unforgettable. Highly recommend Nepora for anyone planning to visit Egypt.",
+      "author1": "Ahmed Mohamed",
+      "country1": "Saudi Arabia",
+      "review2": "Exceptional service from start to finish. The tour guide was very knowledgeable, and the hotels were excellent. Will definitely use Nepora again for our next Egyptian adventure.",
+      "author2": "Sarah Johnson",
+      "country2": "United Kingdom",
+      "review3": "Perfect organization and attention to detail. The 360° virtual tours helped us plan our trip better. Thank you Nepora for making our Egyptian dream come true.",
+      "author3": "Mohammed Al-Ali",
+      "country3": "UAE",
+      "review4": "A rich and enjoyable experience. The tour guides have deep knowledge of Egyptian history.",
+      "author4": "Noura Al-Harbi",
+      "country4": "Qatar"
+    },
+    "common": {
+      "loading": "Loading...",
+      "error": "An error occurred",
+      "success": "Success",
+      "close": "Close",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "save": "Save",
+      "edit": "Edit",
+      "delete": "Delete",
+      "search": "Search",
+      "filter": "Filter",
+      "sort": "Sort",
+      "viewMore": "View More",
+      "viewLess": "View Less",
+      "readMore": "Read More",
+      "readLess": "Read Less",
+      "learnMore": "Learn More",
+      "getStarted": "Get Started",
+      "contactUs": "Contact Us",
+      "bookNow": "Book Now",
+      "currency": "EGP",
+      "egp": "EGP",
+      "perPerson": "per person",
+      "perNight": "per night",
+      "perDay": "per day"
+    }
+  }
+}

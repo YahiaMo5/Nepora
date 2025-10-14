@@ -1,0 +1,1274 @@
+/* ============================================
+   Base RTL/LTR Adjustments
+   ============================================ */
+
+/* Text Alignment */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="ltr"] {
+    text-align: left;
+}
+
+[dir="rtl"] .text-start {
+    text-align: right !important;
+}
+
+[dir="rtl"] .text-end {
+    text-align: left !important;
+}
+
+[dir="ltr"] .text-start {
+    text-align: left !important;
+}
+
+[dir="ltr"] .text-end {
+    text-align: right !important;
+}
+
+/* ============================================
+   Navigation Bar RTL Adjustments
+   ============================================ */
+
+/* Navbar Navigation Items */
+[dir="rtl"] .navbar-nav {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+[dir="ltr"] .navbar-nav {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Navbar Actions Container */
+[dir="rtl"] .navbar-actions {
+    margin-left: 0;
+    margin-right: 1.5rem;
+}
+
+[dir="ltr"] .navbar-actions {
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
+
+/* Navbar Brand */
+[dir="rtl"] .navbar-brand {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+[dir="ltr"] .navbar-brand {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+/* Navbar Toggler */
+[dir="rtl"] .navbar-toggler {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="ltr"] .navbar-toggler {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* Mobile Menu RTL Adjustments */
+@media (max-width: 991.98px) {
+    [dir="rtl"] .navbar-actions {
+        margin-right: 0;
+    }
+
+    [dir="ltr"] .navbar-actions {
+        margin-left: 0;
+    }
+}
+
+/* ============================================
+   Hero Section RTL Adjustments
+   ============================================ */
+
+/* Hero CTA Buttons */
+[dir="rtl"] .hero-cta {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .hero-cta {
+    flex-direction: row;
+}
+
+/* Pharaonic Symbols Position Flip */
+[dir="rtl"] .symbol-ankh {
+    right: auto;
+    left: 15%;
+}
+
+[dir="ltr"] .symbol-ankh {
+    left: auto;
+    right: 15%;
+}
+
+[dir="rtl"] .symbol-eye {
+    left: auto;
+    right: 10%;
+}
+
+[dir="ltr"] .symbol-eye {
+    right: auto;
+    left: 10%;
+}
+
+[dir="rtl"] .symbol-scarab {
+    right: auto;
+    left: 20%;
+}
+
+[dir="ltr"] .symbol-scarab {
+    left: auto;
+    right: 20%;
+}
+
+/* Hieroglyphic Patterns Position Flip */
+[dir="rtl"] .pattern-1 {
+    left: auto;
+    right: 10%;
+}
+
+[dir="ltr"] .pattern-1 {
+    right: auto;
+    left: 10%;
+}
+
+[dir="rtl"] .pattern-2 {
+    right: auto;
+    left: 10%;
+}
+
+[dir="ltr"] .pattern-2 {
+    left: auto;
+    right: 10%;
+}
+
+/* Mobile Hero CTA */
+@media (max-width: 575.98px) {
+
+    [dir="rtl"] .hero-cta,
+    [dir="ltr"] .hero-cta {
+        flex-direction: column;
+    }
+}
+
+/* ============================================
+   Destinations Section RTL Adjustments
+   ============================================ */
+
+/* Destination Meta (Location) */
+[dir="rtl"] .destination-meta {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .destination-meta {
+    flex-direction: row;
+}
+
+[dir="rtl"] .destination-meta .location {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .destination-meta .location {
+    flex-direction: row;
+}
+
+/* Pharaonic Border Transform Origin */
+[dir="rtl"] .pharaonic-border {
+    transform-origin: right;
+}
+
+[dir="ltr"] .pharaonic-border {
+    transform-origin: left;
+}
+
+/* Swiper Navigation Arrows RTL */
+[dir="rtl"] .destinations-swiper .swiper-button-prev {
+    left: auto;
+    right: 10px;
+}
+
+[dir="rtl"] .destinations-swiper .swiper-button-next {
+    right: auto;
+    left: 10px;
+}
+
+[dir="ltr"] .destinations-swiper .swiper-button-prev {
+    right: auto;
+    left: 10px;
+}
+
+[dir="ltr"] .destinations-swiper .swiper-button-next {
+    left: auto;
+    right: 10px;
+}
+
+/* Carousel Controls RTL */
+[dir="rtl"] .carousel-control-prev {
+    right: 0;
+    left: auto;
+}
+
+[dir="rtl"] .carousel-control-next {
+    left: 0;
+    right: auto;
+}
+
+[dir="ltr"] .carousel-control-prev {
+    left: 0;
+    right: auto;
+}
+
+[dir="ltr"] .carousel-control-next {
+    right: 0;
+    left: auto;
+}
+
+/* ============================================
+   360° Tour Section RTL Adjustments
+   ============================================ */
+
+/* Tour Thumbnails Grid */
+[dir="rtl"] .tour-thumbnails {
+    direction: rtl;
+}
+
+[dir="ltr"] .tour-thumbnails {
+    direction: ltr;
+}
+
+/* Tour Controls */
+[dir="rtl"] .tour-controls {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .tour-controls {
+    flex-direction: row;
+}
+
+/* ============================================
+   Tour Packages Section RTL Adjustments
+   ============================================ */
+
+/* Package Features List */
+[dir="rtl"] .features-list {
+    padding-right: 0;
+    padding-left: 1.5rem;
+    text-align: right;
+}
+
+[dir="ltr"] .features-list {
+    padding-left: 0;
+    padding-right: 1.5rem;
+    text-align: left;
+}
+
+[dir="rtl"] .features-list li {
+    text-align: right;
+}
+
+[dir="ltr"] .features-list li {
+    text-align: left;
+}
+
+/* Package Badge */
+[dir="rtl"] .package-badge {
+    right: auto;
+    left: 1rem;
+}
+
+[dir="ltr"] .package-badge {
+    left: auto;
+    right: 1rem;
+}
+
+/* Price Display */
+[dir="rtl"] .price {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .price {
+    flex-direction: row;
+}
+
+/* ============================================
+   Trip Planner Form RTL Adjustments
+   ============================================ */
+
+/* Form Steps Progress Bar */
+[dir="rtl"] .progress-bar {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .progress-bar {
+    flex-direction: row;
+}
+
+/* Form Step Content */
+[dir="rtl"] .form-step {
+    text-align: right;
+}
+
+[dir="ltr"] .form-step {
+    text-align: left;
+}
+
+/* Step Title and Description */
+[dir="rtl"] .step-title,
+[dir="rtl"] .step-description {
+    text-align: right;
+}
+
+[dir="ltr"] .step-title,
+[dir="ltr"] .step-description {
+    text-align: left;
+}
+
+/* Form Navigation Buttons */
+[dir="rtl"] .form-navigation {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .form-navigation {
+    flex-direction: row;
+}
+
+[dir="rtl"] .btn-prev {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+[dir="ltr"] .btn-prev {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Form Labels */
+[dir="rtl"] .form-label {
+    text-align: right;
+}
+
+[dir="ltr"] .form-label {
+    text-align: left;
+}
+
+/* Form Inputs */
+[dir="rtl"] .form-control,
+[dir="rtl"] .form-select {
+    text-align: right;
+    direction: rtl;
+}
+
+[dir="ltr"] .form-control,
+[dir="ltr"] .form-select {
+    text-align: left;
+    direction: ltr;
+}
+
+/* Date Inputs - Keep Natural Order */
+[dir="rtl"] input[type="date"] {
+    text-align: right;
+    direction: rtl;
+}
+
+[dir="ltr"] input[type="date"] {
+    text-align: left;
+    direction: ltr;
+}
+
+/* Number Inputs */
+[dir="rtl"] input[type="number"] {
+    text-align: right;
+    direction: rtl;
+}
+
+[dir="ltr"] input[type="number"] {
+    text-align: left;
+    direction: ltr;
+}
+
+/* Checkbox and Radio Groups */
+[dir="rtl"] .form-check {
+    padding-right: 1.5em;
+    padding-left: 0;
+    text-align: right;
+}
+
+[dir="ltr"] .form-check {
+    padding-left: 1.5em;
+    padding-right: 0;
+    text-align: left;
+}
+
+[dir="rtl"] .form-check-input {
+    float: right;
+    margin-right: -1.5em;
+    margin-left: 0;
+}
+
+[dir="ltr"] .form-check-input {
+    float: left;
+    margin-left: -1.5em;
+    margin-right: 0;
+}
+
+/* Input Groups */
+[dir="rtl"] .input-group {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .input-group {
+    flex-direction: row;
+}
+
+[dir="rtl"] .input-group-text {
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+[dir="ltr"] .input-group-text {
+    border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+/* Destination Selection Cards */
+/* Destination Selection Cards removed (Trip Planner) */
+
+/* Hotel Recommendations Grid */
+[dir="rtl"] .hotel-recommendations {
+    direction: rtl;
+}
+
+[dir="ltr"] .hotel-recommendations {
+    direction: ltr;
+}
+
+[dir="rtl"] .hotel-card {
+    text-align: right;
+}
+
+[dir="ltr"] .hotel-card {
+    text-align: left;
+}
+
+/* Trip Summary */
+[dir="rtl"] .trip-summary {
+    text-align: right;
+}
+
+[dir="ltr"] .trip-summary {
+    text-align: left;
+}
+
+[dir="rtl"] .summary-item {
+    text-align: right;
+}
+
+[dir="ltr"] .summary-item {
+    text-align: left;
+}
+
+/* Price Display */
+[dir="rtl"] .price-display {
+    text-align: right;
+}
+
+[dir="ltr"] .price-display {
+    text-align: left;
+}
+
+/* Validation Messages */
+[dir="rtl"] .validation-message,
+[dir="rtl"] .invalid-feedback {
+    text-align: right;
+}
+
+[dir="ltr"] .validation-message,
+[dir="ltr"] .invalid-feedback {
+    text-align: left;
+}
+
+/* ============================================
+   About Us Section RTL Adjustments
+   ============================================ */
+
+/* About Section */
+[dir="rtl"] .about-section {
+    text-align: right;
+}
+
+[dir="ltr"] .about-section {
+    text-align: left;
+}
+
+/* About Content */
+[dir="rtl"] .about-content {
+    text-align: right;
+}
+
+[dir="ltr"] .about-content {
+    text-align: left;
+}
+
+/* Stats Section */
+[dir="rtl"] .stats-section {
+    direction: rtl;
+    text-align: center;
+}
+
+[dir="ltr"] .stats-section {
+    direction: ltr;
+    text-align: center;
+}
+
+[dir="rtl"] .stat-item {
+    text-align: center;
+}
+
+[dir="ltr"] .stat-item {
+    text-align: center;
+}
+
+/* Mission Vision Cards */
+[dir="rtl"] .mission-vision-card {
+    text-align: right;
+}
+
+[dir="ltr"] .mission-vision-card {
+    text-align: left;
+}
+
+/* Timeline */
+[dir="rtl"] .timeline {
+    direction: rtl;
+}
+
+[dir="rtl"] .timeline::before {
+    right: 50%;
+    left: auto;
+}
+
+[dir="ltr"] .timeline {
+    direction: ltr;
+}
+
+[dir="ltr"] .timeline::before {
+    left: 50%;
+    right: auto;
+}
+
+[dir="rtl"] .milestone-card {
+    text-align: right;
+}
+
+[dir="ltr"] .milestone-card {
+    text-align: left;
+}
+
+/* ============================================
+   FAQ Section RTL Adjustments
+   ============================================ */
+
+/* Accordion */
+[dir="rtl"] .accordion-button {
+    text-align: right;
+    padding-right: 1.25rem;
+    padding-left: 3rem;
+}
+
+[dir="ltr"] .accordion-button {
+    text-align: left;
+    padding-left: 1.25rem;
+    padding-right: 3rem;
+}
+
+[dir="rtl"] .accordion-button::after {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+[dir="ltr"] .accordion-button::after {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Accordion Body */
+[dir="rtl"] .accordion-body {
+    text-align: right;
+}
+
+[dir="ltr"] .accordion-body {
+    text-align: left;
+}
+
+/* ============================================
+   Contact Section RTL Adjustments
+   ============================================ */
+
+/* Contact Info Icons */
+[dir="rtl"] .contact-info-item {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+[dir="ltr"] .contact-info-item {
+    flex-direction: row;
+    text-align: left;
+}
+
+[dir="rtl"] .contact-icon {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+[dir="ltr"] .contact-icon {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+/* Social Media Links */
+[dir="rtl"] .social-links {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .social-links {
+    flex-direction: row;
+}
+
+/* Map Container */
+[dir="rtl"] .map-container {
+    direction: ltr;
+    /* Maps should always be LTR */
+}
+
+[dir="ltr"] .map-container {
+    direction: ltr;
+}
+
+/* ============================================
+   Footer RTL Adjustments
+   ============================================ */
+
+/* Footer Section */
+[dir="rtl"] .footer {
+    text-align: right;
+}
+
+[dir="ltr"] .footer {
+    text-align: left;
+}
+
+/* Footer Columns */
+[dir="rtl"] .footer-section {
+    text-align: right;
+}
+
+[dir="ltr"] .footer-section {
+    text-align: left;
+}
+
+[dir="rtl"] .footer-column {
+    text-align: right;
+}
+
+[dir="ltr"] .footer-column {
+    text-align: left;
+}
+
+/* Footer Title */
+[dir="rtl"] .footer-title {
+    text-align: right;
+}
+
+[dir="ltr"] .footer-title {
+    text-align: left;
+}
+
+/* Footer Description */
+[dir="rtl"] .footer-description {
+    text-align: right;
+}
+
+[dir="ltr"] .footer-description {
+    text-align: left;
+}
+
+/* Footer Social Links */
+[dir="rtl"] .footer-social {
+    justify-content: flex-start;
+}
+
+[dir="ltr"] .footer-social {
+    justify-content: flex-start;
+}
+
+/* Footer Links */
+[dir="rtl"] .footer-links {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: right;
+}
+
+[dir="ltr"] .footer-links {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+
+[dir="rtl"] .footer-links li {
+    text-align: right;
+}
+
+[dir="ltr"] .footer-links li {
+    text-align: left;
+}
+
+/* Newsletter Form */
+[dir="rtl"] .newsletter-form {
+    direction: rtl;
+}
+
+[dir="ltr"] .newsletter-form {
+    direction: ltr;
+}
+
+[dir="rtl"] .newsletter-form .input-group {
+    flex-direction: row;
+}
+
+[dir="ltr"] .newsletter-form .input-group {
+    flex-direction: row;
+}
+
+[dir="rtl"] .newsletter-form .form-control {
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    text-align: right;
+}
+
+[dir="ltr"] .newsletter-form .form-control {
+    border-radius: var(--radius-md) 0 0 var(--radius-md);
+    text-align: left;
+}
+
+[dir="rtl"] .newsletter-form .btn {
+    border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+[dir="ltr"] .newsletter-form .btn {
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+/* Footer Newsletter Text */
+[dir="rtl"] .footer-newsletter-text {
+    text-align: right;
+}
+
+[dir="ltr"] .footer-newsletter-text {
+    text-align: left;
+}
+
+/* Copyright Text */
+[dir="rtl"] .copyright {
+    text-align: center;
+}
+
+[dir="ltr"] .copyright {
+    text-align: center;
+}
+
+/* Footer Bottom */
+[dir="rtl"] .footer-bottom {
+    text-align: center;
+}
+
+[dir="ltr"] .footer-bottom {
+    text-align: center;
+}
+
+/* ============================================
+   Bootstrap Grid RTL Adjustments
+   ============================================ */
+
+/* DON'T reverse all rows - only specific ones that need it */
+/* Most Bootstrap grid rows should maintain their order */
+[dir="rtl"] .row {
+    /* Keep normal direction - Bootstrap handles RTL internally */
+    flex-direction: row;
+}
+
+[dir="ltr"] .row {
+    flex-direction: row;
+}
+
+/* Only reverse rows that explicitly need it */
+[dir="rtl"] .row.rtl-reverse {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .row.rtl-reverse {
+    flex-direction: row;
+}
+
+/* Column Ordering */
+[dir="rtl"] .order-first {
+    order: 12;
+}
+
+[dir="rtl"] .order-last {
+    order: -1;
+}
+
+[dir="ltr"] .order-first {
+    order: -1;
+}
+
+[dir="ltr"] .order-last {
+    order: 12;
+}
+
+/* ============================================
+   Bootstrap Card RTL Adjustments
+   ============================================ */
+
+/* Card Header */
+[dir="rtl"] .card-header {
+    text-align: right;
+}
+
+[dir="ltr"] .card-header {
+    text-align: left;
+}
+
+/* Card Body */
+[dir="rtl"] .card-body {
+    text-align: right;
+}
+
+[dir="ltr"] .card-body {
+    text-align: left;
+}
+
+/* Card Footer */
+[dir="rtl"] .card-footer {
+    text-align: right;
+}
+
+[dir="ltr"] .card-footer {
+    text-align: left;
+}
+
+/* ============================================
+   Bootstrap Modal RTL Adjustments
+   ============================================ */
+
+/* Modal Header */
+[dir="rtl"] .modal-header {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .modal-header {
+    flex-direction: row;
+}
+
+[dir="rtl"] .modal-header .btn-close {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+[dir="ltr"] .modal-header .btn-close {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Modal Body */
+[dir="rtl"] .modal-body {
+    text-align: right;
+}
+
+[dir="ltr"] .modal-body {
+    text-align: left;
+}
+
+/* Modal Footer */
+[dir="rtl"] .modal-footer {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .modal-footer {
+    flex-direction: row;
+}
+
+/* ============================================
+   Bootstrap Alert RTL Adjustments
+   ============================================ */
+
+[dir="rtl"] .alert {
+    text-align: right;
+}
+
+[dir="ltr"] .alert {
+    text-align: left;
+}
+
+[dir="rtl"] .alert-dismissible .btn-close {
+    left: 0;
+    right: auto;
+}
+
+[dir="ltr"] .alert-dismissible .btn-close {
+    right: 0;
+    left: auto;
+}
+
+/* ============================================
+   Bootstrap Breadcrumb RTL Adjustments
+   ============================================ */
+
+[dir="rtl"] .breadcrumb {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .breadcrumb {
+    flex-direction: row;
+}
+
+[dir="rtl"] .breadcrumb-item+.breadcrumb-item::before {
+    float: right;
+    padding-left: 0.5rem;
+    padding-right: 0;
+    content: "/";
+}
+
+[dir="ltr"] .breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: 0.5rem;
+    padding-left: 0;
+    content: "/";
+}
+
+/* ============================================
+   Bootstrap Dropdown RTL Adjustments
+   ============================================ */
+
+[dir="rtl"] .dropdown-menu {
+    text-align: right;
+    right: 0;
+    left: auto;
+}
+
+[dir="ltr"] .dropdown-menu {
+    text-align: left;
+    left: 0;
+    right: auto;
+}
+
+[dir="rtl"] .dropdown-item {
+    text-align: right;
+}
+
+[dir="ltr"] .dropdown-item {
+    text-align: left;
+}
+
+/* ============================================
+   Bootstrap List Group RTL Adjustments
+   ============================================ */
+
+[dir="rtl"] .list-group-item {
+    text-align: right;
+}
+
+[dir="ltr"] .list-group-item {
+    text-align: left;
+}
+
+/* ============================================
+   Bootstrap Badge RTL Adjustments
+   ============================================ */
+
+[dir="rtl"] .badge {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+[dir="ltr"] .badge {
+    margin-right: 0.5rem;
+    margin-left: 0;
+}
+
+/* ============================================
+   Parallax Animation RTL Adjustments
+   ============================================ */
+
+/* Ensure parallax works in both directions */
+[dir="rtl"] .parallax-layer,
+[dir="ltr"] .parallax-layer {
+    transform-origin: center center;
+}
+
+/* Floating animations should work in both directions */
+[dir="rtl"] .pharaonic-symbol,
+[dir="ltr"] .pharaonic-symbol {
+    animation: float 15s ease-in-out infinite;
+}
+
+/* Pattern animations */
+[dir="rtl"] .hieroglyphic-pattern,
+[dir="ltr"] .hieroglyphic-pattern {
+    animation-play-state: running;
+}
+
+/* ============================================
+   Utility Classes for RTL/LTR
+   ============================================ */
+
+/* Margin Utilities */
+[dir="rtl"] .ms-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+[dir="rtl"] .me-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+[dir="ltr"] .ms-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+[dir="ltr"] .me-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+/* Padding Utilities */
+[dir="rtl"] .ps-0 {
+    padding-right: 0 !important;
+    padding-left: initial;
+}
+
+[dir="rtl"] .ps-1 {
+    padding-right: 0.25rem !important;
+    padding-left: initial;
+}
+
+[dir="rtl"] .ps-2 {
+    padding-right: 0.5rem !important;
+    padding-left: initial;
+}
+
+[dir="rtl"] .ps-3 {
+    padding-right: 1rem !important;
+    padding-left: initial;
+}
+
+[dir="rtl"] .ps-4 {
+    padding-right: 1.5rem !important;
+    padding-left: initial;
+}
+
+[dir="rtl"] .ps-5 {
+    padding-right: 3rem !important;
+    padding-left: initial;
+}
+
+[dir="rtl"] .pe-0 {
+    padding-left: 0 !important;
+    padding-right: initial;
+}
+
+[dir="rtl"] .pe-1 {
+    padding-left: 0.25rem !important;
+    padding-right: initial;
+}
+
+[dir="rtl"] .pe-2 {
+    padding-left: 0.5rem !important;
+    padding-right: initial;
+}
+
+[dir="rtl"] .pe-3 {
+    padding-left: 1rem !important;
+    padding-right: initial;
+}
+
+[dir="rtl"] .pe-4 {
+    padding-left: 1.5rem !important;
+    padding-right: initial;
+}
+
+[dir="rtl"] .pe-5 {
+    padding-left: 3rem !important;
+    padding-right: initial;
+}
+
+/* Float Utilities */
+[dir="rtl"] .float-start {
+    float: right !important;
+}
+
+[dir="rtl"] .float-end {
+    float: left !important;
+}
+
+[dir="ltr"] .float-start {
+    float: left !important;
+}
+
+[dir="ltr"] .float-end {
+    float: right !important;
+}
+
+/* Border Radius Utilities */
+[dir="rtl"] .rounded-start {
+    border-top-right-radius: var(--radius-md) !important;
+    border-bottom-right-radius: var(--radius-md) !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+[dir="rtl"] .rounded-end {
+    border-top-left-radius: var(--radius-md) !important;
+    border-bottom-left-radius: var(--radius-md) !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+[dir="ltr"] .rounded-start {
+    border-top-left-radius: var(--radius-md) !important;
+    border-bottom-left-radius: var(--radius-md) !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+[dir="ltr"] .rounded-end {
+    border-top-right-radius: var(--radius-md) !important;
+    border-bottom-right-radius: var(--radius-md) !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+/* ============================================
+   Responsive RTL/LTR Adjustments
+   ============================================ */
+
+/* Mobile Specific Adjustments */
+@media (max-width: 767.98px) {
+
+    /* Stack elements vertically on mobile - no RTL/LTR difference */
+    [dir="rtl"] .mobile-stack,
+    [dir="ltr"] .mobile-stack {
+        flex-direction: column;
+    }
+
+    /* Center align on mobile for both directions */
+    [dir="rtl"] .mobile-center,
+    [dir="ltr"] .mobile-center {
+        text-align: center;
+    }
+}
+
+/* Tablet Specific Adjustments */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Maintain RTL/LTR flow on tablets */
+    [dir="rtl"] .tablet-rtl {
+        direction: rtl;
+    }
+
+    [dir="ltr"] .tablet-ltr {
+        direction: ltr;
+    }
+}
+
+/* ============================================
+   Print Styles RTL/LTR
+   ============================================ */
+
+@media print {
+    [dir="rtl"] {
+        direction: rtl;
+        text-align: right;
+    }
+
+    [dir="ltr"] {
+        direction: ltr;
+        text-align: left;
+    }
+}
+
+/* ============================================
+   Accessibility - Focus States
+   ============================================ */
+
+/* Focus states should work in both directions */
+[dir="rtl"] *:focus,
+[dir="ltr"] *:focus {
+    outline-offset: 2px;
+}
+
+/* ============================================
+   Custom Scrollbar RTL/LTR
+   ============================================ */
+
+/* Scrollbar position adjusts automatically in RTL */
+[dir="rtl"] ::-webkit-scrollbar {
+    width: 10px;
+}
+
+[dir="ltr"] ::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* ============================================
+   Animation Direction Adjustments
+   ============================================ */
+
+/* Slide animations should respect direction */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+[dir="rtl"] .slide-in-start {
+    animation: slideInRight 0.5s ease-out;
+}
+
+[dir="rtl"] .slide-in-end {
+    animation: slideInLeft 0.5s ease-out;
+}
+
+[dir="ltr"] .slide-in-start {
+    animation: slideInLeft 0.5s ease-out;
+}
+
+[dir="ltr"] .slide-in-end {
+    animation: slideInRight 0.5s ease-out;
+}

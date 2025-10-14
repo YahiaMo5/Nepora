@@ -1,0 +1,945 @@
+/* ============================================
+   Pharaonic Decorative Elements and Animations
+   Task 25 Implementation
+   ============================================ */
+
+/* ============================================
+   1. Hieroglyphic Patterns as Background Decorations
+   ============================================ */
+
+/* Hieroglyphic Background Pattern */
+.hieroglyphic-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hieroglyphic Symbols Decoration */
+.hieroglyphic-symbols {
+    position: absolute;
+    font-size: 2rem;
+    color: var(--pharaonic-gold);
+    opacity: 0.08;
+    pointer-events: none;
+    user-select: none;
+}
+
+.hieroglyphic-symbols.top-left {
+    top: 5%;
+    left: 5%;
+}
+
+.hieroglyphic-symbols.top-right {
+    top: 5%;
+    right: 5%;
+}
+
+.hieroglyphic-symbols.bottom-left {
+    bottom: 5%;
+    left: 5%;
+}
+
+.hieroglyphic-symbols.bottom-right {
+    bottom: 5%;
+    right: 5%;
+}
+
+/* ============================================
+   2. Pharaonic Border Elements for Section Dividers
+   ============================================ */
+
+/* Top Border Decoration */
+.pharaonic-border-top {
+    position: relative;
+}
+
+.pharaonic-border-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-gold);
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+}
+
+/* Bottom Border Decoration */
+.pharaonic-border-bottom {
+    position: relative;
+}
+
+.pharaonic-border-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-gold);
+    box-shadow: 0 -2px 8px rgba(212, 175, 55, 0.3);
+}
+
+/* Decorative Section Divider */
+.section-divider {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.section-divider::before,
+.section-divider::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--pharaonic-gold), transparent);
+}
+
+.section-divider-icon {
+    padding: 0 2rem;
+    font-size: 2rem;
+    color: var(--pharaonic-gold);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Pharaonic Corner Decorations */
+.pharaonic-corners {
+    position: relative;
+}
+
+.pharaonic-corners::before,
+.pharaonic-corners::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--pharaonic-gold);
+}
+
+.pharaonic-corners::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.pharaonic-corners::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+/* ============================================
+   3. Animated Entrance Effects for Sections
+   ============================================ */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Fade In Down Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-down {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+/* Fade In Left Animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-left {
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+/* Fade In Right Animation */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-right {
+    animation: fadeInRight 0.8s ease-out;
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease-out;
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.scale-in {
+    animation: scaleIn 0.6s ease-out;
+}
+
+/* Zoom In Animation */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.zoom-in {
+    animation: zoomIn 0.6s ease-out;
+}
+
+/* Rotate In Animation */
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-10deg) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
+.rotate-in {
+    animation: rotateIn 0.8s ease-out;
+}
+
+/* Animation Delays for Staggered Effects */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-600 {
+    animation-delay: 0.6s;
+}
+
+/* Animation Fill Mode */
+.animation-fill-both {
+    animation-fill-mode: both;
+}
+
+/* ============================================
+   4. Hover Animations for Cards and Buttons
+   ============================================ */
+
+/* Card Hover Effects */
+.card-hover-lift {
+    transition: all 0.3s ease;
+}
+
+.card-hover-lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.3);
+}
+
+.card-hover-scale {
+    transition: all 0.3s ease;
+}
+
+.card-hover-scale:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(212, 175, 55, 0.25);
+}
+
+.card-hover-glow {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card-hover-glow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5);
+    transition: box-shadow 0.3s ease;
+    pointer-events: none;
+}
+
+.card-hover-glow:hover::after {
+    box-shadow: 0 0 20px 5px rgba(212, 175, 55, 0.5);
+}
+
+/* Button Hover Effects */
+.btn-hover-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-hover-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-hover-shine:hover::before {
+    left: 100%;
+}
+
+.btn-hover-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(212, 175, 55, 0.3);
+    }
+
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 6px 16px rgba(212, 175, 55, 0.5);
+    }
+}
+
+.btn-hover-bounce:hover {
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-8px);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+    75% {
+        transform: translateY(-6px);
+    }
+}
+
+.btn-hover-shake:hover {
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+/* Icon Hover Rotation */
+.icon-hover-rotate {
+    transition: transform 0.3s ease;
+}
+
+.icon-hover-rotate:hover {
+    transform: rotate(360deg);
+}
+
+/* ============================================
+   5. Loading Animations with Pharaonic Theme
+   ============================================ */
+
+/* Pharaonic Spinner */
+.pharaonic-spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(212, 175, 55, 0.2);
+    border-top-color: var(--pharaonic-gold);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pharaonic Pulse Loader */
+.pharaonic-pulse-loader {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pharaonic-pulse-loader span {
+    width: 15px;
+    height: 15px;
+    background: var(--pharaonic-gold);
+    border-radius: 50%;
+    animation: pulse-loader 1.4s ease-in-out infinite;
+}
+
+.pharaonic-pulse-loader span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.pharaonic-pulse-loader span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.pharaonic-pulse-loader span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes pulse-loader {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    40% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+/* Pharaonic Wave Loader */
+.pharaonic-wave-loader {
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+    height: 40px;
+}
+
+.pharaonic-wave-loader span {
+    width: 8px;
+    background: var(--pharaonic-gold);
+    animation: wave-loader 1.2s ease-in-out infinite;
+}
+
+.pharaonic-wave-loader span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.pharaonic-wave-loader span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.pharaonic-wave-loader span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.pharaonic-wave-loader span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.pharaonic-wave-loader span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+@keyframes wave-loader {
+
+    0%,
+    100% {
+        height: 10px;
+    }
+
+    50% {
+        height: 40px;
+    }
+}
+
+/* Pharaonic Ankh Loader */
+.pharaonic-ankh-loader {
+    font-size: 3rem;
+    color: var(--pharaonic-gold);
+    animation: ankh-loader 2s ease-in-out infinite;
+}
+
+.pharaonic-ankh-loader::before {
+    content: '☥';
+}
+
+@keyframes ankh-loader {
+
+    0%,
+    100% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.2);
+        opacity: 0.7;
+    }
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 20, 25, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+/* ============================================
+   6. Custom Cursor Effect (Optional)
+   ============================================ */
+
+/* Hide Default Cursor */
+html {
+    cursor: none !important;
+}
+
+/* Hide Default Cursor on All Interactive Elements */
+a, button, [role="button"], input[type="submit"], 
+.swiper-button-next, .swiper-button-prev, .clickable {
+    cursor: none !important;
+}
+
+/* Custom Cursor Container */
+.custom-cursor {
+    pointer-events: none;
+    position: fixed;
+    z-index: 10000;
+}
+
+/* Main Cursor Dot */
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--pharaonic-gold);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 10001;
+    transition: width 0.2s ease, height 0.2s ease, background 0.2s ease;
+}
+
+/* Cursor Outline */
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--pharaonic-gold);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 10000;
+    transition: all 0.15s ease-out;
+    opacity: 0.5;
+}
+
+/* Cursor Hover State */
+.cursor-hover .cursor-dot {
+    width: 16px;
+    height: 16px;
+    background: var(--pharaonic-turquoise);
+}
+
+.cursor-hover .cursor-outline {
+    width: 60px;
+    height: 60px;
+    border-color: var(--pharaonic-turquoise);
+    opacity: 0.8;
+}
+
+/* Cursor Click State */
+.cursor-click .cursor-dot {
+    width: 12px;
+    height: 12px;
+}
+
+.cursor-click .cursor-outline {
+    width: 30px;
+    height: 30px;
+}
+
+/* Cursor Dragging State */
+.cursor-dragging .cursor-dot {
+    width: 10px;
+    height: 10px;
+    background: var(--pharaonic-turquoise);
+}
+
+.cursor-dragging .cursor-outline {
+    width: 50px;
+    height: 50px;
+    border-color: var(--pharaonic-turquoise);
+    opacity: 1;
+}
+
+/* Hide default cursor on interactive elements */
+.custom-cursor-active {
+    cursor: none !important;
+}
+
+.custom-cursor-active *,
+.custom-cursor-active a,
+.custom-cursor-active button,
+.custom-cursor-active .btn,
+.custom-cursor-active .card,
+.custom-cursor-active input,
+.custom-cursor-active textarea,
+.custom-cursor-active select,
+.custom-cursor-active label,
+.custom-cursor-active .swiper-slide,
+.custom-cursor-active .swiper-button-prev,
+.custom-cursor-active .swiper-button-next,
+.custom-cursor-active .swiper-pagination-bullet,
+.custom-cursor-active .package-card,
+.custom-cursor-active .destination-card,
+.custom-cursor-active .tour360-container,
+.custom-cursor-active .booking-form,
+.custom-cursor-active .form-control,
+.custom-cursor-active .form-select {
+    cursor: none !important;
+}
+
+/* ============================================
+    7. Additional Pharaonic Decorative Elements
+   ============================================ */
+
+/* Floating Pharaonic Symbols */
+.floating-symbol {
+    position: absolute;
+    font-size: 3rem;
+    color: var(--pharaonic-gold);
+    opacity: 0.2;
+    animation: float 15s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Make symbols more visible on hero section */
+.hero-section .floating-symbol {
+    opacity: 0.25;
+    font-size: 3.5rem;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(-5deg);
+    }
+
+    75% {
+        transform: translateY(-30px) rotate(3deg);
+    }
+}
+
+/* Papyrus Texture Effect */
+.papyrus-texture {
+    position: relative;
+    background-color: var(--pharaonic-sand);
+}
+
+.papyrus-texture::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.03) 2px, rgba(0, 0, 0, 0.03) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0, 0, 0, 0.03) 2px, rgba(0, 0, 0, 0.03) 4px);
+    pointer-events: none;
+}
+
+/* Golden Shimmer Effect */
+.golden-shimmer {
+    position: relative;
+    overflow: hidden;
+}
+
+.golden-shimmer::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(212, 175, 55, 0.3) 50%, transparent 70%);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+/* Scarab Decoration */
+.scarab-decoration {
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--pharaonic-turquoise);
+    animation: scarab-move 4s ease-in-out infinite;
+}
+
+.scarab-decoration::before {
+    content: '𓆣';
+}
+
+@keyframes scarab-move {
+
+    0%,
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(20px) rotate(10deg);
+    }
+}
+
+/* Eye of Horus Decoration */
+.eye-of-horus {
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--pharaonic-blue);
+    animation: eye-blink 5s ease-in-out infinite;
+}
+
+.eye-of-horus::before {
+    content: '𓂀';
+}
+
+@keyframes eye-blink {
+
+    0%,
+    90%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    95% {
+        opacity: 0.3;
+        transform: scale(0.95);
+    }
+}
+
+/* ============================================
+   8. Responsive Adjustments
+   ============================================ */
+
+/* Reduce animations on mobile for performance */
+@media (max-width: 767.98px) {
+    .floating-symbol {
+        display: none;
+    }
+
+    .hieroglyphic-symbols {
+        font-size: 1.5rem;
+    }
+
+    .section-divider-icon {
+        font-size: 1.5rem;
+    }
+
+    /* Disable custom cursor on mobile */
+    .cursor-dot,
+    .cursor-outline {
+        display: none;
+    }
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .floating-symbol,
+    .golden-shimmer::after,
+    .scarab-decoration,
+    .eye-of-horus {
+        animation: none !important;
+    }
+}
+
+/* ============================================
+   9. Utility Classes for Easy Application
+   ============================================ */
+
+/* Apply entrance animation on scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+}
+
+/* Stagger children animations */
+.stagger-children>* {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.stagger-children>*:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.stagger-children>*:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.stagger-children>*:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.stagger-children>*:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.stagger-children>*:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.stagger-children>*:nth-child(6) {
+    animation-delay: 0.6s;
+}

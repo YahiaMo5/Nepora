@@ -1,0 +1,145 @@
+/* Critical CSS for Above-the-Fold Content - Inline in <head> */
+/* Minimal styles needed for initial render */
+
+:root{
+    --pharaonic-gold:#D4AF37;
+    --pharaonic-blue:#1B4B7F;
+    --pharaonic-sand:#E8D5B7;
+    --pharaonic-turquoise:#00A693;
+    --dark-bg:#0F1419;
+    --light-bg:#F5F5F0;
+    --text-dark:#2C2C2C;
+    --text-light:#FFFFFF;
+    --accent-gold-light:#F4E4C1;
+    --accent-blue-dark:#0D2847;
+    --gradient-hero:linear-gradient(135deg,rgba(27,75,127,.9) 0%,rgba(15,20,25,.8) 100%);
+    --gradient-gold:linear-gradient(135deg,#D4AF37 0%,#F4E4C1 100%)
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:80px
+}
+
+body{
+    font-family:'Cairo','Tajawal',sans-serif;
+    line-height:1.6;
+    color:var(--text-dark);
+    background-color:var(--light-bg)
+}
+
+.navbar{
+    background:transparent;
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    transition:all .3s ease;
+    padding:1rem 0;
+    box-shadow:none;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000
+}
+
+.navbar.scrolled{
+    background:rgba(27,75,127,.95);
+    box-shadow:0 4px 12px rgba(212,175,55,.15)
+}
+
+.navbar-brand{
+    font-size:1.75rem;
+    font-weight:900;
+    color:var(--pharaonic-gold);
+    transition:all .3s ease;
+    letter-spacing:1px
+}
+
+.brand-text{
+    background:var(--gradient-gold);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text
+}
+
+.navbar-nav .nav-link{
+    color:var(--text-light);
+    font-weight:500;
+    font-size:1rem;
+    padding:.5rem 1rem;
+    margin:0 .25rem;
+    transition:all .3s ease;
+    position:relative
+}
+
+.hero-section{
+    position:relative;
+    width:100%;
+    height:100vh;
+    min-height:600px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#0D2847 0%,#1B4B7F 100%)
+}
+
+.hero-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(180deg,rgba(15,20,25,.3) 0%,rgba(27,75,127,.7) 100%);
+    z-index:4
+}
+
+.hero-content{
+    position:relative;
+    z-index:5;
+    text-align:center;
+    color:var(--text-light);
+    padding:2rem;
+    max-width:1200px
+}
+
+.hero-title{
+    font-size:clamp(3rem,8vw,6rem);
+    font-weight:900;
+    margin-bottom:1.5rem;
+    background:var(--gradient-gold);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+    letter-spacing:2px
+}
+
+.hero-subtitle{
+    font-size:clamp(1.25rem,3vw,2rem);
+    font-weight:300;
+    margin-bottom:2.5rem;
+    color:var(--accent-gold-light);
+    line-height:1.6;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+@media (max-width:991.98px){
+    .hero-section{
+        height:80vh;
+        min-height:500px
+    }
+}
+
+@media (max-width:575.98px){
+    .hero-section{
+        height:70vh;
+        min-height:450px
+    }
+}

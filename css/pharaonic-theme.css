@@ -1,0 +1,405 @@
+/* ============================================
+   Nepora Tourism Website - Pharaonic Theme
+   ============================================ */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Lato:wght@300;400;700;900&display=swap');
+
+/* ============================================
+   CSS Custom Properties - Pharaonic Color Palette
+   ============================================ */
+
+:root {
+  /* Primary Pharaonic Colors */
+  --pharaonic-gold: #D4AF37;
+  --pharaonic-blue: #1B4B7F;
+  --pharaonic-sand: #E8D5B7;
+  --pharaonic-turquoise: #00A693;
+  --pharaonic-red: #C1272D;
+  
+  /* Neutral Colors */
+  --dark-bg: #0F1419;
+  --light-bg: #F5F5F0;
+  --text-dark: #2C2C2C;
+  --text-light: #FFFFFF;
+  
+  /* Accent Colors */
+  --accent-gold-light: #F4E4C1;
+  --accent-blue-dark: #0D2847;
+  --accent-sand-dark: #C9B896;
+  --accent-turquoise-light: #33BFB0;
+  --accent-red-dark: #8B1C20;
+  
+  /* Gradient Definitions */
+  --gradient-hero: linear-gradient(135deg, 
+    rgba(27, 75, 127, 0.9) 0%, 
+    rgba(15, 20, 25, 0.8) 100%);
+  
+  --gradient-gold: linear-gradient(135deg, 
+    #D4AF37 0%, 
+    #F4E4C1 100%);
+  
+  --gradient-gold-vertical: linear-gradient(180deg, 
+    #D4AF37 0%, 
+    #F4E4C1 100%);
+  
+  --gradient-blue: linear-gradient(135deg, 
+    #1B4B7F 0%, 
+    #0D2847 100%);
+  
+  --gradient-accent: linear-gradient(135deg, 
+    #D4AF37 0%, 
+    #00A693 50%, 
+    #1B4B7F 100%);
+  
+  --gradient-overlay: linear-gradient(180deg, 
+    rgba(15, 20, 25, 0.3) 0%, 
+    rgba(27, 75, 127, 0.7) 100%);
+  
+  /* Shadow Definitions */
+  --shadow-sm: 0 2px 4px rgba(212, 175, 55, 0.1);
+  --shadow-md: 0 4px 8px rgba(212, 175, 55, 0.15);
+  --shadow-lg: 0 8px 16px rgba(212, 175, 55, 0.2);
+  --shadow-xl: 0 12px 24px rgba(212, 175, 55, 0.25);
+  
+  /* Typography Variables */
+  --font-arabic: 'Cairo', 'Tajawal', sans-serif;
+  --font-english: 'Lato', sans-serif;
+  --font-heading-english: 'Cinzel', serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 4rem;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ============================================
+   Responsive Typography System
+   ============================================ */
+
+/* Base Font Size */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-arabic);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--light-bg);
+}
+
+/* English Language Typography */
+[lang="en"] body,
+[dir="ltr"] body {
+  font-family: var(--font-english);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+  color: var(--pharaonic-blue);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: 600;
+}
+
+h5 {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: 600;
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 600;
+}
+
+/* English Headings with Cinzel Font */
+[lang="en"] h1,
+[lang="en"] h2,
+[lang="en"] h3,
+[dir="ltr"] h1,
+[dir="ltr"] h2,
+[dir="ltr"] h3 {
+  font-family: var(--font-heading-english);
+}
+
+/* Paragraph Typography */
+p {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Lead Text */
+.lead {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* Small Text */
+small, .small {
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+}
+
+/* Display Text (Extra Large) */
+.display-1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.display-2 {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.display-3 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* ============================================
+   Pharaonic Text Styles
+   ============================================ */
+
+.text-gold {
+  color: var(--pharaonic-gold);
+}
+
+.text-blue {
+  color: var(--pharaonic-blue);
+}
+
+.text-sand {
+  color: var(--pharaonic-sand);
+}
+
+.text-turquoise {
+  color: var(--pharaonic-turquoise);
+}
+
+.text-red {
+  color: var(--pharaonic-red);
+}
+
+/* Gradient Text */
+.text-gradient-gold {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-accent {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   Background Utilities
+   ============================================ */
+
+.bg-gold {
+  background-color: var(--pharaonic-gold);
+}
+
+.bg-blue {
+  background-color: var(--pharaonic-blue);
+}
+
+.bg-sand {
+  background-color: var(--pharaonic-sand);
+}
+
+.bg-turquoise {
+  background-color: var(--pharaonic-turquoise);
+}
+
+.bg-red {
+  background-color: var(--pharaonic-red);
+}
+
+.bg-dark {
+  background-color: var(--dark-bg);
+}
+
+.bg-light {
+  background-color: var(--light-bg);
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-hero {
+  background: var(--gradient-hero);
+}
+
+.bg-gradient-gold {
+  background: var(--gradient-gold);
+}
+
+.bg-gradient-blue {
+  background: var(--gradient-blue);
+}
+
+.bg-gradient-accent {
+  background: var(--gradient-accent);
+}
+
+/* ============================================
+   Button Styles with Pharaonic Theme
+   ============================================ */
+
+.btn-pharaonic {
+  background: var(--gradient-gold);
+  color: var(--text-dark);
+  border: 2px solid var(--pharaonic-gold);
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-pharaonic:hover {
+  background: var(--pharaonic-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  color: var(--text-dark);
+}
+
+.btn-pharaonic-outline {
+  background: transparent;
+  color: var(--pharaonic-gold);
+  border: 2px solid var(--pharaonic-gold);
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+}
+
+.btn-pharaonic-outline:hover {
+  background: var(--pharaonic-gold);
+  color: var(--text-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ============================================
+   Responsive Typography Adjustments
+   ============================================ */
+
+/* Mobile Devices (< 576px) */
+@media (max-width: 575.98px) {
+  html {
+    font-size: 14px;
+  }
+  
+  h1 {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  h2, h3 {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  p {
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+/* Tablets (576px - 991px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Desktop (>= 992px) */
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Large Desktop (>= 1400px) */
+@media (min-width: 1400px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+.shadow-pharaonic-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-pharaonic-md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-pharaonic-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+.shadow-pharaonic-xl {
+  box-shadow: var(--shadow-xl);
+}
+
+/* Transition Utilities */
+.transition-fast {
+  transition: all var(--transition-fast);
+}
+
+.transition-normal {
+  transition: all var(--transition-normal);
+}
+
+.transition-slow {
+  transition: all var(--transition-slow);
+}

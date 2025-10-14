@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- Home Page -->
+    <url>
+        <loc>https://nepora.com/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://nepora.com/?lang=ar"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://nepora.com/?lang=en"/>
+    </url>
+    
+    <!-- FAQ Page -->
+    <url>
+        <loc>https://nepora.com/faq.html</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://nepora.com/faq.html?lang=ar"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://nepora.com/faq.html?lang=en"/>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://nepora.com/contact.html</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://nepora.com/contact.html?lang=ar"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://nepora.com/contact.html?lang=en"/>
+    </url>
+    
+    <!-- Destinations Section -->
+    <url>
+        <loc>https://nepora.com/#destinations</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- 360 Tour Section -->
+    <url>
+        <loc>https://nepora.com/#tour360</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Packages Section -->
+    <url>
+        <loc>https://nepora.com/#packages</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- About Section -->
+    <url>
+        <loc>https://nepora.com/#about</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+</urlset>

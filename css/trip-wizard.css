@@ -1,0 +1,935 @@
+/* Trip Wizard Styles */
+.trip-wizard-section{
+    background:linear-gradient(180deg,var(--light-bg),#fff);
+    padding:3rem 0
+}
+
+.wizard-card{
+    max-width:1200px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(15,20,25,.08);
+    overflow: visible;
+    margin:0 auto;
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .wizard-card {
+        margin-bottom: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    .wizard-steps {
+        padding: 1rem;
+    }
+
+    .wizard-steps .steps-content {
+        min-height: 400px;
+    }
+
+    /* Better spacing for mobile forms */
+    .form-group {
+        margin-bottom: 1.25rem;
+    }
+
+    .form-control {
+        font-size: 16px; /* Prevent zoom on iOS */
+        padding: 0.75rem;
+    }
+}
+
+/* Keep wizard content stable: use flex container and fixed content area */
+.wizard-steps{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+}
+
+.wizard-steps .steps-side{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+    align-items: center !important;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .wizard-steps .steps-side {
+        gap: 1.5rem;
+    }
+    
+    .step-indicator {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .step-indicator::before {
+        font-size: 0.85rem;
+        width: max-content;
+        text-align: center;
+    }
+}
+
+.wizard-steps .steps-content{
+    flex:1 1 auto;
+    max-width:1200px;
+    position: relative;
+    min-height: 480px;
+    perspective: 1000px;
+}
+
+/* Enhanced Grid Layout */
+#attractionsList .row {
+    margin: -12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#attractionsList [class*="col-"] {
+    padding: 12px;
+}
+
+/* Card Styles */
+.attraction-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+.attraction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.attraction-item .card-media {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Grid System Enhancements */
+#attractionsList {
+    margin: 0 -12px;
+}
+
+#attractionsList [class*="col-"] {
+    padding: 0 12px;
+}
+
+/* Card Styles */
+.attraction-item {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    margin-bottom: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.attraction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.attraction-item .card-media {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.attraction-item:hover .card-media {
+    transform: scale(1.05);
+}
+
+/* Keep wizard in its section but allow natural height */
+.wizard-card{
+    min-height:480px;
+    height:auto;
+}
+
+/* keep visual overflow (shadows, rounded corners) intact by hiding overflow on the inner card body */
+.wizard-card .card-body{
+    overflow: visible;
+    border-radius: 12px;
+}
+
+/* Content wrapper to ensure proper positioning */
+.wizard-steps .steps-content-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+}
+
+.wizard-steps{
+    padding:1rem 1.25rem
+}
+
+.step-indicators{
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 3rem;
+    position: relative;
+    padding: 0.5rem;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.step-indicator{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--light-bg);
+    color: var(--pharaonic-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 2px solid var(--pharaonic-gold);
+    box-shadow: 0 2px 8px rgba(27,75,127,0.12);
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 0 !important;
+}
+
+/* Active step style */
+.step-indicator.active {
+    background: linear-gradient(135deg, var(--pharaonic-gold), #e3c15f);
+    color: #fff;
+    border-color: var(--pharaonic-gold);
+    box-shadow: 0 4px 16px rgba(212,175,55,0.35);
+    transform: scale(1.1);
+}
+
+/* Previously completed steps */
+.step-indicator.completed {
+    background: var(--pharaonic-blue);
+    color: #fff;
+    border-color: var(--pharaonic-blue);
+}
+
+.step-indicator:not(.active):hover {
+    transform: translateY(-2px);
+    background: #fff;
+    box-shadow: 0 3px 12px rgba(27,75,127,0.15);
+}
+
+/* Add step labels */
+.step-indicator::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 0.5rem);
+    transform: translateX(-50%);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--pharaonic-blue);
+    white-space: nowrap;
+    opacity: 0.85;
+    transition: all 0.3s ease;
+}
+
+.step-indicator:hover::before,
+.step-indicator.active::before {
+    opacity: 1;
+    color: var(--pharaonic-gold);
+    transform: translateY(-50%) translateX(-4px);
+}
+
+/* animated progress fill inside the horizontal connector */
+.step-indicators::after{
+    content:'';
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:1.5rem;
+    right:1.5rem;
+    height:4px;
+    background:linear-gradient(90deg, rgba(27,75,127,0.06) 0%, rgba(27,75,127,0.06) 100%);
+    border-radius:4px;
+    z-index:0;
+}
+
+/* progress bar element - will be sized by JS via inline style width */
+.step-indicators .connector-progress{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:1.5rem;
+    height:4px;
+    width:0%;
+    background:linear-gradient(90deg,var(--pharaonic-gold),var(--pharaonic-blue));
+    border-radius:4px;
+    z-index:0;
+    transition:width .45s cubic-bezier(.2,.9,.2,1);
+}
+
+/* checked icon animation */
+.attraction-checkbox i,
+.hotel-checkbox i{
+    display:inline-block;
+    transform-origin:center center;
+}
+.checked-pop i{
+    animation:popCheck .38s cubic-bezier(.2,.9,.2,1);
+}
+@keyframes popCheck{
+    0%{ transform:scale(.2) rotate(-15deg); opacity:0 }
+    40%{ transform:scale(1.25) rotate(8deg); opacity:1 }
+    70%{ transform:scale(0.9) rotate(-4deg); opacity:1 }
+    100%{ transform:scale(1) rotate(0deg); opacity:1 }
+}
+
+.attraction-item.selected .attraction-checkbox i,
+.hotel-item.selected .hotel-checkbox i {
+    animation:popCheck .45s cubic-bezier(.2,.9,.2,1);
+}
+
+.step-indicator.active{
+    background:var(--pharaonic-gold);
+    color:#fff
+}
+
+.wizard-step{
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.wizard-step.slide-out {
+    opacity: 0;
+    transform: translateX(30px);
+    pointer-events: none;
+}
+
+.wizard-step.slide-in {
+    opacity: 0;
+    transform: translateX(-30px);
+    pointer-events: none;
+}
+
+.wizard-step.d-none {
+    display: none;
+    transform: translateX(-30px);
+}
+
+/* Use flex layout for attractions so cards can wrap and maintain consistent sizing */
+#attractionsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+/* If JS injects Bootstrap columns (col-12 / col-md-6), override them inside the flex container
+   so each column behaves like a card wrapper (flex item) instead of full-width block. */
+#attractionsList > .col-12,
+#attractionsList > [class*="col-"] {
+    display: flex;
+    flex: 1 1 320px;
+    max-width: 420px;
+    padding-left: 0.5rem; /* small internal gutter */
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+}
+
+#attractionsList > .col-12 > .attraction-item,
+#attractionsList > [class*="col-"] > .attraction-item {
+    width: 100%;
+}
+
+/* Each card: use flex-basis for preferred width with max-width to control growth */
+#attractionsList .attraction-item{
+    border:1px solid rgba(15,20,25,.08);
+    border-radius:16px;
+    padding:0;
+    background:#fff;
+    overflow:hidden;
+    cursor:pointer;
+    position:relative;
+    transition:all .3s cubic-bezier(0.4, 0, 0.2, 1);
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    box-shadow: 0 4px 12px rgba(15,20,25,.05);
+    flex: 1 1 320px;
+    max-width: 420px;
+}
+
+#attractionsList .attraction-item:hover {
+    border-color: var(--pharaonic-gold);
+    box-shadow: 0 12px 28px rgba(27,75,127,.12);
+    transform: translateY(-6px);
+}
+
+.attraction-item .attraction-image {
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    transition: transform .5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-compact .card-media{
+    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 240px;
+}
+
+.attraction-item .attraction-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0.95) 100%);
+}
+
+.attraction-item .attraction-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.attraction-item .attraction-location {
+    color: var(--pharaonic-blue);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.attraction-item .attraction-location i {
+    color: var(--pharaonic-gold);
+}
+
+.attraction-item .attraction-meta {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(15,20,25,.06);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.attraction-item .attraction-meta i {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    color: var(--pharaonic-gold);
+}
+
+.attraction-item .attraction-checkbox {
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    border:2px solid var(--pharaonic-gold);
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:transparent;
+    transition:all .3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.attraction-item.selected{
+    transform:translateY(-4px);
+    box-shadow:0 12px 28px rgba(11,18,26,.12);
+    border-color:var(--pharaonic-gold);
+}
+
+.attraction-item.selected .card-media{
+    transform:scale(1.03);
+}
+
+.attraction-item.selected .attraction-checkbox {
+    background:var(--pharaonic-gold);
+    border-color:var(--pharaonic-gold);
+    color:#fff;
+    transform:scale(1.1);
+    box-shadow:0 6px 18px rgba(27,75,127,.12);
+}
+
+#hotelsList{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap:1rem;
+    align-items:start;
+}
+
+#hotelsList .hotel-item{
+    display:block;
+    padding:0;
+    border-radius:12px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:all .2s ease;
+    height:100%;
+}
+
+#hotelsList .hotel-item:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 22px rgba(15,20,25,.08);
+}
+
+#hotelsList .hotel-item .card-media{
+    transition:transform .28s ease, box-shadow .28s ease;
+}
+
+#hotelsList .hotel-item.selected{
+    transform:translateY(-6px) scale(1.01);
+    box-shadow:0 18px 38px rgba(11,18,26,.12);
+    border-color:var(--pharaonic-gold);
+}
+
+#hotelsList .hotel-item.selected .card-media{
+    transform:scale(1.02);
+}
+
+#hotelsList .hotel-item .hotel-checkbox{
+    border:2px solid rgba(255,255,255,.9);
+    background:rgba(255,255,255,.9);
+}
+
+#hotelsList .hotel-item.selected .hotel-checkbox{
+    background:var(--pharaonic-gold);
+    color:#fff;
+    border-color:var(--pharaonic-gold);
+}
+
+#hotelsList .hotel-item.selected{
+    box-shadow:0 10px 28px rgba(20,20,20,.12);
+    border:1px solid rgba(212,175,55,.12);
+}
+
+.hotel-item .hotel-checkbox {
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    border:2px solid rgba(15,20,25,.2);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:transparent;
+    transition:all .2s ease;
+    margin-left:1rem
+}
+
+.hotel-item.selected .hotel-checkbox {
+    background:var(--pharaonic-gold);
+    border-color:var(--pharaonic-gold);
+    color:#fff
+}
+
+#summaryCard{
+    border-radius:10px;
+    padding:1rem;
+    background:linear-gradient(180deg,#fff,#f8f6f2);
+    border:1px solid rgba(212,175,55,.06);
+    box-shadow:0 6px 18px rgba(212,175,55,.02);
+}
+
+.wizard-card .btn-outline-secondary{
+    border-color: var(--pharaonic-gold);
+    color: var(--pharaonic-gold);
+    background: #fff;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.wizard-card .btn-outline-secondary:hover,
+.wizard-card .btn-outline-secondary:focus {
+    background: var(--pharaonic-gold);
+    color: #fff;
+    border-color: var(--pharaonic-gold);
+    box-shadow: 0 2px 8px rgba(212,175,55,0.12);
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border-color: #dc3545;
+    background-image: none;
+}
+
+.invalid-feedback {
+    display: none;
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem
+}
+
+.form-control.is-invalid + .invalid-feedback,
+.form-select.is-invalid + .invalid-feedback,
+.is-invalid .invalid-feedback {
+    display: block
+}
+
+.hotel-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    background: #fff;
+    transition: all 0.2s ease
+}
+
+.hotel-item .hotel-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0
+}
+
+/* Unified card layout for attractions and hotels */
+.card-compact{
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid rgba(15,20,25,.06);
+    background:#fff;
+}
+
+.card-compact .card-media{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-compact .card-body-compact{
+    padding:.75rem 1rem;
+}
+
+[dir="rtl"] .card-compact .card-body-compact{
+    direction:rtl
+}
+
+/* Form controls & buttons sizing */
+.trip-wizard-section .form-control,
+.trip-wizard-section .form-select{
+    height: calc(2.25rem + .5rem);
+    padding:.5rem .75rem;
+    font-size:1rem;
+    border-radius:8px;
+}
+
+.trip-wizard-section .btn-pharaonic,
+.trip-wizard-section .btn-outline-secondary,
+.trip-wizard-section .btn-success{
+    padding:.6rem 1.1rem;
+    font-size:1rem;
+    border-radius:8px;
+}
+
+/* Amenities icons row */
+.amenities{
+    display:flex;gap:.75rem;
+    flex-wrap:wrap;
+    margin-top:.5rem
+}
+
+.amenity{
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+    background:#fff;
+    padding:.35rem .5rem;
+    border-radius:999px;
+    border:1px solid rgba(15,20,25,.06);
+    font-size:.9rem;
+    color:var(--text-dark)
+}
+
+.amenity i{
+    color:var(--pharaonic-gold)
+}
+
+/* Room selection area inside hotel card */
+.room-selection{
+    padding: .75rem 1rem;
+    border-top:1px dashed rgba(15,20,25,.04);
+    background:linear-gradient(180deg,#fff,#fcfcfc)
+}
+
+.room-selection .form-control{
+    height:2.25rem;
+    font-size:.95rem;
+}
+
+.room-selection label{
+    font-size:.9rem;
+    margin-bottom:.35rem
+}
+
+/* Make attraction and hotel cards visually similar */
+.attraction-item, .hotel-item{
+    display:block;
+}
+
+.attraction-item .attraction-details{
+    padding:1.5rem; 
+    display:flex;
+    flex-direction:column;
+    gap:0.75rem;
+}
+
+.attraction-item .attraction-title{
+    font-weight:600;
+    font-size:1.1rem;
+    color:var(--text-dark);
+    margin-bottom:0.75rem;
+    line-height:1.35;
+}
+
+.attraction-item .attraction-meta{
+    font-size:.92rem;
+    color:var(--text-muted);
+    margin-top:auto;
+    opacity:0.9;
+}
+
+/* Step 3: contact form layout - two fields side-by-side and one below */
+.step-3-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1rem
+}
+
+.step-3-grid .full-width{
+    grid-column:1/-1
+}
+
+/* Receipt-style summary */
+#summaryCard{
+    border-radius:10px;
+    padding:1rem;
+    background:linear-gradient(180deg,#fff,#f8f6f2);
+    border:1px solid rgba(212,175,55,.08);
+    box-shadow:0 6px 18px rgba(212,175,55,.04);
+}
+
+/* structured rows inside summary */
+#summaryCard .summary-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:.6rem 0;
+    gap:1rem;
+    border-bottom:1px solid rgba(15,20,25,.03);
+}
+
+#summaryCard .summary-row:last-child{
+    border-bottom:none;
+    border: 2px solid var(--pharaonic-blue);
+    border-radius: 20px;
+    background:var(--pharaonic-blue);
+}
+
+.summary-total{
+    color: white;
+    font-size: larger;
+    font-weight: 900;
+    padding:.45rem .65rem;
+}
+
+#summaryCard .summary-label{
+    color:#666;
+    font-size:0.95rem;
+}
+
+#summaryCard .summary-value{
+    font-weight:600;
+    text-align:left;
+}
+
+/* total price badge */
+.summary-total-badge{
+    display:inline-block;
+    color:var(--pharaonic-gold);
+    padding:.45rem .65rem;
+    font-weight:900;
+    font-size:1.05rem;
+    min-width:120px;
+    text-align:center;
+    box-shadow: 0 2px 8px rgba(27,75,127,0.15);
+}
+
+@media (max-width: 768px) {
+    .summary-total-badge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0.75rem;
+        font-size: 1.5rem;
+    }
+
+    .summary-total {
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    #summaryCard {
+        padding: 1rem;
+    }
+
+    #summaryCard .summary-label {
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+    }
+
+    #summaryCard .summary-value {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* step transition helpers */
+.wizard-step.step-visible{opacity:1; transform:translateX(0)}
+.wizard-step.step-enter{opacity:0; transform:translateX(20px)}
+.wizard-step.step-exit{opacity:0; transform:translateX(-20px)}
+
+/* Gold finish button */
+.btn-pharaonic{
+    background:var(--pharaonic-gold);
+    border-color:var(--pharaonic-gold);
+    color:#fff
+}
+
+.btn-pharaonic:hover{
+    filter:brightness(.98)
+}
+
+/* Success banner */
+.booking-success-banner{
+    display:none;
+    padding:.75rem 1rem;
+    border-radius:8px;
+    background:linear-gradient(90deg,var(--pharaonic-gold),#f4e4c1);
+    color:#1b2b3a;
+    margin-bottom:1rem;
+    align-items:center
+}
+
+.booking-success-banner.show{
+    display:flex
+}
+
+.booking-success-banner .check{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:.75rem
+}
+
+.hotel-item .hotel-info {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.hotel-item .hotel-name {
+    font-weight: 600;
+    color: var(--text-dark)
+}
+
+.hotel-item .hotel-price {
+    color: var(--pharaonic-gold);
+    font-weight: 700
+}
+
+.hotel-item .hotel-checkbox {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: rgba(255,255,255,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    transition: all .2s ease
+}
+
+.hotel-item.selected {
+    border-color: var(--pharaonic-gold);
+    box-shadow: 0 5px 15px rgba(0,0,0,.08)
+}
+
+.hotel-item.selected .hotel-checkbox {
+    background: var(--pharaonic-gold);
+    border-color: var(--pharaonic-gold);
+    color: #fff
+}
+
+@media (max-width:575.98px){
+    .step-indicator{
+        width:2rem;
+        height:2rem;
+        font-size:.85rem
+    }
+}
+
+/* Responsive attraction cards */
+@media (max-width: 768px) {
+    #attractionsList {
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .attraction-item .attraction-image,
+    .card-compact .card-media {
+        height: 200px;
+    }
+    
+    .attraction-item .attraction-details {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #attractionsList {
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    #attractionsList .attraction-item{ flex: 1 1 100%; max-width: 100%; }
+    /* make any column wrappers full width on mobile */
+    #attractionsList > .col-12,
+    #attractionsList > [class*="col-"] {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

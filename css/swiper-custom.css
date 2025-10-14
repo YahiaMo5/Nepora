@@ -1,0 +1,92 @@
+/* Custom Swiper Pagination Styles */
+.swiper-pagination {
+    position: static !important;
+    margin-top: 30px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+/* More specific to destinations to beat other rules in style.css */
+.destinations-swiper .swiper-pagination {
+    position: relative !important;
+    margin-top: 30px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 50 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: #ddd !important;
+    opacity: 0.7 !important;
+    margin: 0 5px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #C4A962 !important;
+    opacity: 1 !important;
+    transform: scale(1.2) !important;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: var(--pharaonic-sand);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.destinations-swiper .swiper-pagination-bullet-active,
+.testimonials-swiper .swiper-pagination-bullet-active {
+    background-color: var(--pharaonic-gold);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Custom Navigation Buttons */
+.destinations-swiper .swiper-button-next,
+.destinations-swiper .swiper-button-prev,
+.testimonials-swiper .swiper-button-next,
+.testimonials-swiper .swiper-button-prev {
+    color: var(--pharaonic-gold);
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: var(--pharaonic-blue);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Specific rule for moved pagination element (below destinations swiper) */
+.destinations-swiper-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    z-index: 60;
+}
+
+/* Ensure map/location SVG icons are visible in destination cards */
+.destination-meta .location svg {
+    width: 16px !important;
+    height: 16px !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    color: var(--pharaonic-turquoise) !important; /* for currentColor */
+    fill: currentColor !important;
+}
